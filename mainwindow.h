@@ -4,6 +4,8 @@
 #include <QMainWindow>
 
 #include "Thumbnail.h"
+#include "Singleton.h"
+#include "YamlReader.h"
 
 namespace Ui {
 class MainWindow;
@@ -19,11 +21,20 @@ public:
 
     Thumbnail *tn;
     QString path;
+    Singleton *singleton;
+    YamlReader *yamlreader;
+    FileUtil *_fileutil;
 
 private slots:
     void on_action_triggered();
 
     void on_stopButton_clicked();
+
+    void selectedMapNameChanged();
+
+    void on_dataLoadButton_clicked();
+
+    void on_startButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -31,6 +42,7 @@ private:
     void findMap();
     void setFilePath(QString setpath);
     void runShellscript(QString program);
+    void drawRoute();
 
 };
 

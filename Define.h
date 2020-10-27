@@ -35,14 +35,19 @@
 #define MAKEROOT_FORMAT "%s%s %s %s"
 #define MAPS_ROUTE_FORMAT "%s/%s"
 #define MAPS_YAML_FORMAT "%s/%s/%s%s"
+
 #define KILL_NODE_COMMAND "rosnode kill --all"
 
 #define SH_MAKEROOT "make_auto_route.sh"  // hikisuu naosu
 #define SH_POWER_ON "power_on.sh"
-#define SH_ROUTES "routes.sh"
-#define SH_STOP "stop.sh"
-#define SH_MAKEMAP "make_map.sh"
-#define ROUTE_YAML "route999.yaml"
+#define SH_ROUTES   "routes.sh"
+#define SH_STOP     "stop.sh"
+#define SH_MAKEMAP  "make_map.sh"
+#define SH_LOADMAP  "load.sh"
+
+#define ROUTE_YAML  "route999.yaml"
 #define SENSOR_DATA "sensor.txt"
+
+#define COPYRIGHT "Copyrigth(c) Kufusha Inc., 2020, All Rights Reserved."
 
 #endif // DEFINE_H

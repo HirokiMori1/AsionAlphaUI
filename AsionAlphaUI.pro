@@ -26,13 +26,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    Thumbnail.cpp
+    Thumbnail.cpp \
+    Singleton.cpp \
+    YamlReader.cpp \
+    ProcessingFileUtil.cpp
 
 HEADERS += \
         mainwindow.h \
     Define.h \
-    Thumbnail.h
+    Thumbnail.h \
+    Singleton.h \
+    YamlReader.h \
+    ProcessingFileUtil.h
 
 FORMS += \
         mainwindow.ui \
     Thumbnail.ui
+
+unix:!macx: LIBS += -L$$PWD/../../../usr/lib/x86_64-linux-gnu/ -lyaml-cpp
+
+INCLUDEPATH += $$PWD/../../../usr/lib/x86_64-linux-gnu
+DEPENDPATH += $$PWD/../../../usr/lib/x86_64-linux-gnu

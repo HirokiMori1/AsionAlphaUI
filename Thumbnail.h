@@ -1,7 +1,7 @@
 #ifndef THUMBNAIL_H
 #define THUMBNAIL_H
 
-// #include "Singleton.h"
+#include "Singleton.h"
 
 #include <QWidget>
 #include <QString>
@@ -30,7 +30,8 @@ public slots:
 
 private:
     Ui::Thumbnail *ui;
-//     Singleton *singleton;
+    Singleton *singleton;
+
     void setupThumbnail(QString path);
 
     std::function<void(QString)> pathcb;

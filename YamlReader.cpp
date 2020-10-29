@@ -45,7 +45,7 @@ void YamlReader::ReadRouteYaml(){
     _fileutil->fileSet();
     points.clear();
     try{
-        QString filename = QString::asprintf(MAPS_ROUTE_FORMAT,_fileutil->yamldir.toLocal8Bit().constData(),ROUTE_YAML);
+        QString filename = QString::asprintf(MAPS_ROUTE_FORMAT, _fileutil->yamldir.toLocal8Bit().constData(), ROUTE_YAML);
         qDebug() << filename;
         YAML::Node route = YAML::LoadFile(filename.toStdString());
         qDebug() << "start read yaml";
@@ -69,38 +69,3 @@ void YamlReader::ReadRouteYaml(){
         cerr << e.what() << &endl;
     }
 }
-
-/*
-void YamlReader::editYamlImage(QString name){
-    _fileutil = new FileUtil;
-    _fileutil->fileSet();
-    try{
-        YAML::Emitter emitter;
-        qDebug() << QString::asprintf("%s/%s%s",_fileutil->directoryname.toLocal8Bit().constData(),_fileutil->filename.toLocal8Bit().constData(),ROUTE_EXTENSION);
-        YAML::Node org = YAML::LoadFile(QString::asprintf("%s/%s%s",_fileutil->directoryname.toLocal8Bit().constData(),_fileutil->filename.toLocal8Bit().constData(),ROUTE_EXTENSION).toStdString());
-
-        qDebug() << "start read yaml";
-
-        emitter << YAML::BeginMap;
-        emitter << YAML::Key << "image";
-        emitter << YAML::Value << QString::asprintf("%s/%s%s",_fileutil->pgmdir.toLocal8Bit().constData(),name.toUtf8().data(),IMAGE_EXTENSION).toStdString();
-        emitter << YAML::Key << "resolution";
-        emitter << YAML::Value << org["resolution"];
-        emitter << YAML::Key << "origin";
-        emitter << YAML::Value << org["origin"];
-        emitter << YAML::Key << "negate";
-        emitter << YAML::Value << org["negate"];
-        emitter << YAML::Key << "occupied_thresh";
-        emitter << YAML::Value << org["occupied_thresh"];
-        emitter << YAML::Key << "free_thresh";
-        emitter << YAML::Value << org["free_thresh"];
-        emitter << YAML::EndMap;
-
-        std::ofstream fout(QString::asprintf("%s/%s%s",_fileutil->pgmdir.toLocal8Bit().constData(),name.toUtf8().data(),ROUTE_EXTENSION).toStdString());
-        fout << emitter.c_str();
-    }
-    catch(YAML::Exception& e) {
-        cerr << e.what() << &endl;
-    }
-}
-*/

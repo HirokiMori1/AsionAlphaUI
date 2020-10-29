@@ -14,7 +14,7 @@ public:
     void ReadRouteYaml();
     void editYamlImage(QString name);
 
-    double xorigin,yorigin;
+    double xorigin, yorigin;
     QList<double> values;
     QList<QList<double>> points;
 

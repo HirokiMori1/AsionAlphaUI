@@ -24,10 +24,6 @@ public:
 
     QString _path;
 
-public slots:
-    void mousePressEvent(QMouseEvent *event);
-    void mouseReleaseEvent(QMouseEvent *event);
-
 private:
     Ui::Thumbnail *ui;
     Singleton *singleton;

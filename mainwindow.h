@@ -36,6 +36,8 @@ private slots:
 
     void on_startButton_clicked();
 
+    void on_action_2_triggered();
+
 private:
     Ui::MainWindow *ui;
 

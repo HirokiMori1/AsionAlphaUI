@@ -2,14 +2,7 @@
 #define DEFINE_H
 
 #define MAPS_FILEPATH "/home/kufushatec/catkin_ws/src/ros_start/maps"
-#define SH_FILEPATH "/home/kufushatec/catkin_ws/src/ros_start/cmd/"
-#define SENSOR_FILEPATH "/home/kufushatec/catkin_ws/src/ros_start/dummy/"
-#define COLOR "#DDDDDD"
-
-#define MAPSELECT_INDEX 0   // MAP選択
-#define IMAGEREAD_INDEX 1   // 経路
-#define OPERATION_INDEX 2   // 運用
-#define SHOWLOG_INDEX 3     // センサ
+#define SH_FILEPATH   "/home/kufushatec/catkin_ws/src/ros_start/cmd/"
 
 #define RESOLUTION_NUM 0
 #define NEGATE_NUM 1
@@ -23,9 +16,7 @@
 
 #define IMAGE_EXTENSION ".pgm"
 #define ROUTE_EXTENSION ".yaml"
-#define EDIT_COMMENT "を編集中"
 
-#define COEFFICIENT 100.000
 #define IMAGE_SIZE 200
 
 #define PATH_FORMAT "%s%s"
@@ -46,7 +37,6 @@
 #define SH_LOADMAP  "load.sh"
 
 #define ROUTE_YAML  "route999.yaml"
-#define SENSOR_DATA "sensor.txt"
 
 #define COPYRIGHT "Copyrigth(c) Kufusha Inc., 2020, All Rights Reserved."
 

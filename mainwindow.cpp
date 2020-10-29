@@ -2,6 +2,8 @@
 #include "ui_mainwindow.h"
 
 #include "Define.h"
+#include "waitmessagedialog.h"
+#include "aboutdialog.h"
 
 #include <QDir>
 #include <QDirIterator>
@@ -14,8 +16,11 @@
 #include <QPen>
 #include <QProgressDialog>
 #include <QtCore/QThread>
+#include <QTimer>
 
-// コンストラクタ
+/*
+ * コンストラクタ
+ */
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -41,12 +46,13 @@ MainWindow::MainWindow(QWidget *parent) :
     // 起動時は登録したマップの先頭を選択した状態にする
     if ((singleton->getInstance()->buttonGroup->buttons()).count() > 0) {
         singleton->getInstance()->buttonGroup->button(0)->clicked(true);
+        singleton->getInstance()->buttonGroup->button(0)->repaint();
     }
-
-    qDebug() << "[MainWindow::MainWindow]label: " << ui->label->size();
 }
 
-// デストラクタ
+/*
+ * デストラクタ
+ */
 MainWindow::~MainWindow()
 {
     qDebug() << "[MainWindow::~MainWindow]";
@@ -62,9 +68,6 @@ void MainWindow::setFilePath(QString setpath){
 
     path = setpath;
     singleton->getInstance()->selectFilepath = setpath;
-//    QFileInfo edit(setpath);
-//    ui->editing->setText(QString::asprintf(COMMENT_FORMAT,"選択中：",edit.baseName().toLocal8Bit().constData()));
-//    singleton->getInstance()->_MainWindow->setWindowTitle(edit.baseName());
     qDebug() << path;
 }
 
@@ -130,7 +133,7 @@ void MainWindow::runShellscript(QString script){
  */
 void MainWindow::selectedMapNameChanged() {
     QString mapName = sender()->objectName();
-    qDebug() << "[MainWindow::selectedMapNameChanged]" << mapName;
+    qDebug() << "[MainWindow::selectedMapNameChanged]mapName:" << mapName;
 
     ui->selectedMapName->setText(mapName);
     singleton->getInstance()->selectFilepath = QString::asprintf(MAPS_YAML_FORMAT,
@@ -142,14 +145,9 @@ void MainWindow::selectedMapNameChanged() {
 
     drawRoute();
 
-    // 選択しているマップを変更したらデータ読み込みボタンはtrueにする
-    ui->dataLoadButton->setEnabled(true);
-    // 選択しているマップを変更したらスタート・ストップボタンはtrueにするfalseにする
-    ui->startButton->setEnabled(false);
+    ui->dataLoadButton->setEnabled(true);   // マップが選択されたのでデータ読み込みボタンは押下できる
+    ui->startButton->setEnabled(false);     // データ読み込み前なのでstart/stopボタンは押下できない
     ui->stopButton->setEnabled(false);
-
-    qDebug() << "[MainWindow::selectedMapNameChanged]label: " << ui->label->size();
-
 }
 
 /*
@@ -187,8 +185,8 @@ void MainWindow::drawRoute(){
         double y2 = y - (yamlreader->points[i][Y_LENGTH_NUM] / yamlreader->values[RESOLUTION_NUM]);
 
         line.setLine(x1, y1, x2, y2);
-        qDebug() << line;
         painter.drawLine(line);
+//      qDebug() << line;
         x1 = x2;
         y1 = y2;
     }
@@ -206,6 +204,12 @@ void MainWindow::drawRoute(){
  */
 void MainWindow::on_dataLoadButton_clicked()
 {
+    // 読み込み開始時は操作できないようにする
+    ui->dataLoadButton->setEnabled(false);
+    ui->startButton->setEnabled(false);
+    ui->stopButton->setEnabled(false);
+    ui->scrollArea->setEnabled(false);
+
     // ラベルから地図番号を取得
     QRegExp r("(\\d+)$");
     r.indexIn(ui->selectedMapName->text());
@@ -220,29 +224,20 @@ void MainWindow::on_dataLoadButton_clicked()
 
     runShellscript(sh);
 
-    // 起動待ち
-    QProgressDialog progress(
-                tr("しばらくお待ちください・・・"),
-                tr("キャンセル"),
-                0,
-                10,
-                this
-                );
-    progress.setWindowModality(Qt::WindowModal);
-    progress.setWindowTitle(tr("処理中"));
-    progress.show();
+    // 起動待ちダイアログ表示
+    waitMessageDialog *dialog = new waitMessageDialog;
+    dialog->setModal(true);
+    dialog->show();
+    QTimer dlg_timer;           // ダイアログ表示時間用のタイマー
+    dlg_timer.start(16 * 1000);
+    connect(&dlg_timer, SIGNAL(timeout()), dialog, SLOT(close()));
+    QTimer update_timer;
+    update_timer.start(1000);   // 進捗バー表示用タイマー
+    connect(&update_timer, SIGNAL(timeout()), dialog, SLOT(update()));
 
-    for (int cnt=0; cnt<10; cnt++) {
-        QApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
-        progress.setValue(cnt);
-        if (progress.wasCanceled()) {
-            break;
-        }
-        QThread::sleep(1);
-    }
-    progress.setValue(10);
+    dialog->exec();
+    dlg_timer.stop();
 
-    ui->dataLoadButton->setEnabled(false);
     ui->startButton->setEnabled(true);
     ui->stopButton->setEnabled(true);
 }
@@ -252,6 +247,12 @@ void MainWindow::on_dataLoadButton_clicked()
  */
 void MainWindow::on_startButton_clicked()
 {
+    // ステート変更
+    ui->dataLoadButton->setEnabled(false);
+    ui->startButton->setEnabled(false);
+    ui->stopButton->setEnabled(true);
+    ui->scrollArea->setEnabled(false);
+
     // ラベルから地図番号を取得
     QRegExp r("(\\d+)$");
     r.indexIn(ui->selectedMapName->text());
@@ -273,7 +274,6 @@ void MainWindow::on_startButton_clicked()
                                             "999");
     qDebug() << "[MainWindow::on_startButton_clicked]" << routePath;
     runShellscript(routePath);
-
 }
 
 /*
@@ -281,10 +281,15 @@ void MainWindow::on_startButton_clicked()
  */
 void MainWindow::on_stopButton_clicked()
 {
-    QString sh;
-    sh.asprintf(PATH_FORMAT,SH_FILEPATH,SH_STOP);
-    runShellscript(sh.asprintf(PATH_FORMAT,SH_FILEPATH,SH_STOP));
+    // ステート変更
+    ui->dataLoadButton->setEnabled(true);
+    ui->startButton->setEnabled(false);
+    ui->stopButton->setEnabled(false);
+    ui->scrollArea->setEnabled(true);
+
+    QString sh = QString::asprintf(PATH_FORMAT,SH_FILEPATH,SH_STOP);
     qDebug() << "[MainWindow::on_stopButton_clicked]" << sh;
+    runShellscript(sh);
 }
 
 /*
@@ -295,4 +300,13 @@ void MainWindow::on_action_triggered()
     qDebug() << "[MainWindow::on_action_triggered]";
 
     QApplication::quit();
+}
+
+/*
+ * [ヘルプ]->[このツールについて]
+ */
+void MainWindow::on_action_2_triggered()
+{
+    aboutDialog *about = new aboutDialog;
+    about->show();
 }

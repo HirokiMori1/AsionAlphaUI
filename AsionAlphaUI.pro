@@ -29,7 +29,9 @@ SOURCES += \
     Thumbnail.cpp \
     Singleton.cpp \
     YamlReader.cpp \
-    ProcessingFileUtil.cpp
+    ProcessingFileUtil.cpp \
+    waitmessagedialog.cpp \
+    aboutdialog.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -37,11 +39,15 @@ HEADERS += \
     Thumbnail.h \
     Singleton.h \
     YamlReader.h \
-    ProcessingFileUtil.h
+    ProcessingFileUtil.h \
+    waitmessagedialog.h \
+    aboutdialog.h
 
 FORMS += \
         mainwindow.ui \
-    Thumbnail.ui
+    Thumbnail.ui \
+    waitmessagedialog.ui \
+    aboutdialog.ui
 
 unix:!macx: LIBS += -L$$PWD/../../../usr/lib/x86_64-linux-gnu/ -lyaml-cpp
 

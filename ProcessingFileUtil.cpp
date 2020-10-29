@@ -17,7 +17,7 @@
 #include "ProcessingFileUtil.h"
 
 void FileUtil::fileSet(){
-    qDebug() << "fileset";
+    qDebug() << "[FileUtil::fileSet]";
 
     info.setFile(singleton->getInstance()->selectFilepath);
     directoryname = info.absolutePath();
@@ -30,12 +30,11 @@ void FileUtil::fileSet(){
             .arg(filename.toLocal8Bit().constData());
     Filter.append("*.pgm");
 
-//    qDebug() << info;
-    qDebug() << directoryname;
-    qDebug() << filename;
-    qDebug() << pgmdir;
-    qDebug() << yamldir;
-
+    qDebug() << "[FileUtil::fileSet]"
+             << " " << directoryname
+             << " " << filename
+             << " " << pgmdir
+             << " " << yamldir;
 }
 
 QDir FileUtil::patternList(){

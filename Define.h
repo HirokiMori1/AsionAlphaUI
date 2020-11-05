@@ -3,6 +3,8 @@
 
 #define MAPS_FILEPATH "/home/kufushatec/catkin_ws/src/ros_start/maps"
 #define SH_FILEPATH   "/home/kufushatec/catkin_ws/src/ros_start/cmd/"
+#define ASION_IMG     "/home/kufushatec/AsionAlphaUI/image/Asion.png"
+#define KUFUSHA_IMG   "/home/kufushatec/AsionAlphaUI/image/kufusha.png"
 
 #define RESOLUTION_NUM 0
 #define NEGATE_NUM 1

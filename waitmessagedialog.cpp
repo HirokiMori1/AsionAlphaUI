@@ -6,6 +6,13 @@ waitMessageDialog::waitMessageDialog(QWidget *parent) :
     ui(new Ui::waitMessageDialog)
 {
     ui->setupUi(this);
+
+    // Asionのイメージ貼り付け
+    QImage *asionImg = new QImage();
+    asionImg->load(ASION_IMG);
+    QPixmap asionPixmap = QPixmap::fromImage(*asionImg);
+    asionPixmap = asionPixmap.scaled(ui->AsionImgLabel->size());
+    ui->AsionImgLabel->setPixmap(asionPixmap);
 }
 
 waitMessageDialog::~waitMessageDialog()

@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+#include "Define.h"
+
 namespace Ui {
 class aboutDialog;
 }

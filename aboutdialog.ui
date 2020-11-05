@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>About Asion Ver. α</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="AsionImgLabel">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -37,14 +37,11 @@
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>../build-AsionAlphaUI-unknown-Debug/Asion.png</pixmap>
-   </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="KufushaImgLabel">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -68,14 +65,11 @@
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>../build-AsionAlphaUI-unknown-Debug/kufusha.png</pixmap>
-   </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="FDesignImgLabel">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -88,7 +82,7 @@
     <string>F-Design</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="CarotImgLabel">
    <property name="geometry">
     <rect>
      <x>400</x>

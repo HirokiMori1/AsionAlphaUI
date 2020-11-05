@@ -15,7 +15,7 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="QLabel" name="AsionImageLabel">
+    <widget class="QLabel" name="AsionImgLabel">
      <property name="minimumSize">
       <size>
        <width>130</width>
@@ -30,9 +30,6 @@
      </property>
      <property name="text">
       <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../build-AsionAlphaUI-unknown-Debug/Asion.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

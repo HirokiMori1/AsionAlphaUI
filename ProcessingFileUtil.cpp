@@ -38,6 +38,7 @@ void FileUtil::fileSet(){
 }
 
 QDir FileUtil::patternList(){
+    qDebug() << "[FileUtil::patternList]";
     fileSet();
 
     QDir dir(pgmdir);

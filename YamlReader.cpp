@@ -13,6 +13,8 @@
 using namespace std;
 
 void YamlReader::ReadSettingYaml(){
+    qDebug() << "[YamlReader::ReadSettingYaml]";
+
     _fileutil = new FileUtil;
     _fileutil->fileSet();
     values.clear();
@@ -22,10 +24,10 @@ void YamlReader::ReadSettingYaml(){
                                              _fileutil->filename.toLocal8Bit().constData(),
                                              _fileutil->filename.toLocal8Bit().constData(),
                                              ROUTE_EXTENSION);
-        qDebug() << filename;
+        qDebug() << "[YamlReader::ReadSettingYaml]" << filename;
         YAML::Node route = YAML::LoadFile(filename.toStdString());
 
-        qDebug() << "start read Setting yaml";
+        qDebug() << "[YamlReader::ReadSettingYaml]" << "start read Setting yaml";
 
             values.append(route["resolution"].as<double>());
             values.append(route["negate"].as<double>());
@@ -41,14 +43,16 @@ void YamlReader::ReadSettingYaml(){
 }
 
 void YamlReader::ReadRouteYaml(){
+    qDebug() << "[YamlReader::ReadRouteYaml]";
+
     _fileutil = new FileUtil;
     _fileutil->fileSet();
     points.clear();
     try{
         QString filename = QString::asprintf(MAPS_ROUTE_FORMAT, _fileutil->yamldir.toLocal8Bit().constData(), ROUTE_YAML);
-        qDebug() << filename;
+        qDebug() << "[YamlReader::ReadRouteYaml]" << filename;
         YAML::Node route = YAML::LoadFile(filename.toStdString());
-        qDebug() << "start read yaml";
+        qDebug() << "[YamlReader::ReadRouteYaml]" << "start read yaml ";
 
         int i=0;
         while(1){
@@ -62,10 +66,12 @@ void YamlReader::ReadRouteYaml(){
             data.append(route["way_points"][i][Y_ANGLE_NUM].as<double>());
 
             points.append(data);
+
             i++;
         }
     }
     catch(YAML::Exception& e) {
+        qDebug() << "[YamlReader::ReadRouteYaml] Exception" ;
         cerr << e.what() << &endl;
     }
 }

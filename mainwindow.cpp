@@ -72,48 +72,36 @@ void MainWindow::setFilePath(QString setpath){
 }
 
 /*
- * mapディレクトリから.pgmを見つけ出す
+ * mapディレクトリにpgmとroute999.yamlがあれば表示
  */
 void MainWindow::findMap(){
     qDebug() << "[MainWindow::findMap]";
 
     QDir dir(MAPS_FILEPATH);
-    qDebug() << dir.entryList();
-    QStringList extension;
-    QStringList imglist;
-    QStringList rotlist;
+    qDebug() << "[MainWindow::findMap]entryList(): " << dir.entryList();
 
-    extension.append(IMAGE_EXTENSION);
+    for (int i = 0; i < dir.entryList().size(); i++) {
+        if ((dir.entryList().at(i) == ".") || (dir.entryList().at(i) == "..")) {
+            continue;
+        }
 
-    QDirIterator maps(MAPS_FILEPATH, QDir::Files, QDirIterator::Subdirectories);
-    while(maps.hasNext()){
-        maps.next();
+        QString image = MAPS_FILEPATH;
+        QString route = MAPS_FILEPATH;
+        image.append("/").append(dir.entryList().at(i)).append("/").append(dir.entryList().at(i)).append(IMAGE_EXTENSION);
+        route.append("/").append(dir.entryList().at(i)).append("/routes/route999").append(ROUTE_EXTENSION);
 
-        if (maps.filePath().endsWith(IMAGE_EXTENSION, Qt::CaseInsensitive)){
-            if (!maps.filePath().contains("modified", Qt::CaseInsensitive)){
-                imglist.append(maps.filePath().remove(IMAGE_EXTENSION));
-            }
-        } else if(maps.filePath().endsWith(ROUTE_EXTENSION, Qt::CaseInsensitive)){
-            if(!maps.filePath().contains("routes", Qt::CaseInsensitive)){
-                rotlist.append(maps.filePath().remove(ROUTE_EXTENSION));
-            }
+        // 左ペインに表示する
+        QFileInfo imageFile(image);
+        QFileInfo routeFile(route);
+        if (imageFile.exists() && routeFile.exists()) {
+            qDebug() << "[MainWindow::findMap]create Thumbnail " << image;
+            tn = new Thumbnail(image);
+            tn->setPathMethod([=](QString str){this->setFilePath(str);});
+            //tn -> set~method (ramuda)
+            ui->scrollArea->widget()->layout()->addWidget(tn);
         }
     }
 
-    // 左ペインに表示する
-    imglist.sort();
-    rotlist.sort();
-    for (QString image : imglist){
-        for (QString route : rotlist){
-            if (image==route){
-                qDebug() << "[MainWindow::findMap]create Thumbnail";
-                tn = new Thumbnail(QString::asprintf(PATH_FORMAT, image.toLocal8Bit().constData(), IMAGE_EXTENSION));
-                tn->setPathMethod([=](QString str){this->setFilePath(str);});
-                //tn -> set~method (ramuda)
-                ui->scrollArea->widget()->layout()->addWidget(tn);
-            }
-        }
-    }
 }
 
 /*
@@ -229,7 +217,7 @@ void MainWindow::on_dataLoadButton_clicked()
     dialog->setModal(true);
     dialog->show();
     QTimer dlg_timer;           // ダイアログ表示時間用のタイマー
-    dlg_timer.start(16 * 1000);
+    dlg_timer.start(6 * 1000);
     connect(&dlg_timer, SIGNAL(timeout()), dialog, SLOT(close()));
     QTimer update_timer;
     update_timer.start(1000);   // 進捗バー表示用タイマー

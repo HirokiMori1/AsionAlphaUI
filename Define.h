@@ -5,6 +5,12 @@
 #define SH_FILEPATH   "/home/kufushatec/catkin_ws/src/ros_start/cmd/"
 #define ASION_IMG     "/home/kufushatec/AsionAlphaUI/image/Asion.png"
 #define KUFUSHA_IMG   "/home/kufushatec/AsionAlphaUI/image/kufusha.png"
+#define FDESIGN_IMG   "/home/kufushatec/AsionAlphaUI/image/FDesign.png"
+#define CARROT_IMG    "/home/kufushatec/AsionAlphaUI/image/carrotsystems.png"
+#define LOAD_IMG      "/home/kufushatec/AsionAlphaUI/image/load.png"
+#define START_IMG     "/home/kufushatec/AsionAlphaUI/image/start.png"
+#define RESTART_IMG   "/home/kufushatec/AsionAlphaUI/image/restart.png"
+#define STOP_IMG      "/home/kufushatec/AsionAlphaUI/image/stop.png"
 
 #define RESOLUTION_NUM 0
 #define NEGATE_NUM 1
@@ -31,14 +37,16 @@
 
 #define KILL_NODE_COMMAND "rosnode kill --all"
 
-#define SH_MAKEROOT "make_auto_route.sh"  // hikisuu naosu
+#define SH_LOADMAP  "load.sh"
 #define SH_POWER_ON "power_on.sh"
 #define SH_ROUTES   "routes.sh"
+#define SH_RESTART  "restart.sh"
 #define SH_STOP     "stop.sh"
-#define SH_MAKEMAP  "make_map.sh"
-#define SH_LOADMAP  "load.sh"
 
 #define ROUTE_YAML  "route999.yaml"
+
+#define START_MSG   "Asionはスタート位置にいますか？"
+#define RESTART_MSG "再スタートします。Asionの周囲は問題ないですか？"
 
 #define COPYRIGHT "Copyrigth(c) Kufusha Inc., 2020, All Rights Reserved."
 

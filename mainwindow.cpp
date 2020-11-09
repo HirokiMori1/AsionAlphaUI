@@ -17,6 +17,7 @@
 #include <QProgressDialog>
 #include <QtCore/QThread>
 #include <QTimer>
+#include <QMessageBox>
 
 /*
  * コンストラクタ
@@ -40,6 +41,23 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->statusBar->showMessage(COPYRIGHT);
 
     this->setWindowTitle(singleton->getInstance()->windowName);
+
+    // ボタンにIconを付与する
+    QPixmap loadPixmap(LOAD_IMG);
+    QIcon loadIcon(loadPixmap);
+    ui->dataLoadButton->setIcon(loadIcon);
+
+    QPixmap startPixmap(START_IMG);
+    QIcon startIcon(startPixmap);
+    ui->startButton->setIcon(startIcon);
+
+    QPixmap restartPixmap(RESTART_IMG);
+    QIcon restartIcon(restartPixmap);
+    ui->restartButton->setIcon(restartIcon);
+
+    QPixmap stopPixmap(STOP_IMG);
+    QIcon stopIcon(stopPixmap);
+    ui->stopButton->setIcon(stopIcon);
 
     findMap();
 
@@ -135,6 +153,7 @@ void MainWindow::selectedMapNameChanged() {
 
     ui->dataLoadButton->setEnabled(true);   // マップが選択されたのでデータ読み込みボタンは押下できる
     ui->startButton->setEnabled(false);     // データ読み込み前なのでstart/stopボタンは押下できない
+    ui->restartButton->setEnabled(false);
     ui->stopButton->setEnabled(false);
 }
 
@@ -195,6 +214,7 @@ void MainWindow::on_dataLoadButton_clicked()
     // 読み込み開始時は操作できないようにする
     ui->dataLoadButton->setEnabled(false);
     ui->startButton->setEnabled(false);
+    ui->restartButton->setEnabled(false);
     ui->stopButton->setEnabled(false);
     ui->scrollArea->setEnabled(false);
 
@@ -235,33 +255,38 @@ void MainWindow::on_dataLoadButton_clicked()
  */
 void MainWindow::on_startButton_clicked()
 {
-    // ステート変更
-    ui->dataLoadButton->setEnabled(false);
-    ui->startButton->setEnabled(false);
-    ui->stopButton->setEnabled(true);
-    ui->scrollArea->setEnabled(false);
+    int button = QMessageBox::question(this, tr("清掃開始確認"), tr(START_MSG));
+    if (button == QMessageBox::Yes) {
 
-    // ラベルから地図番号を取得
-    QRegExp r("(\\d+)$");
-    r.indexIn(ui->selectedMapName->text());
-    QString mapNum = r.cap(0);
+        // ステート変更
+        ui->dataLoadButton->setEnabled(false);
+        ui->startButton->setEnabled(false);
+        ui->restartButton->setEnabled(true);
+        ui->stopButton->setEnabled(true);
+        ui->scrollArea->setEnabled(false);
 
-    // power_on.sh実行
-    QString powerOnPath = QString::asprintf("%s%s %s",
-                                            SH_FILEPATH,
-                                            SH_POWER_ON,
-                                            mapNum.toLocal8Bit().constData());
-    qDebug() << "[MainWindow::on_startButton_clicked]" << powerOnPath;
-    runShellscript(powerOnPath);
+        // ラベルから地図番号を取得
+        QRegExp r("(\\d+)$");
+        r.indexIn(ui->selectedMapName->text());
+        QString mapNum = r.cap(0);
 
-    // routes.sh実行
-    QString routePath = QString::asprintf("%s%s %s %s",
-                                            SH_FILEPATH,
-                                            SH_ROUTES,
-                                            mapNum.toLocal8Bit().constData(),
-                                            "999");
-    qDebug() << "[MainWindow::on_startButton_clicked]" << routePath;
-    runShellscript(routePath);
+        // power_on.sh実行
+        QString powerOnPath = QString::asprintf("%s%s %s",
+                                                SH_FILEPATH,
+                                                SH_POWER_ON,
+                                                mapNum.toLocal8Bit().constData());
+        qDebug() << "[MainWindow::on_startButton_clicked]" << powerOnPath;
+        runShellscript(powerOnPath);
+
+        // routes.sh実行
+        QString routePath = QString::asprintf("%s%s %s %s",
+                                              SH_FILEPATH,
+                                              SH_ROUTES,
+                                              mapNum.toLocal8Bit().constData(),
+                                              "999");
+        qDebug() << "[MainWindow::on_startButton_clicked]" << routePath;
+        runShellscript(routePath);
+    }
 }
 
 /*
@@ -272,6 +297,7 @@ void MainWindow::on_stopButton_clicked()
     // ステート変更
     ui->dataLoadButton->setEnabled(true);
     ui->startButton->setEnabled(false);
+    ui->restartButton->setEnabled(false);
     ui->stopButton->setEnabled(false);
     ui->scrollArea->setEnabled(true);
 
@@ -297,4 +323,20 @@ void MainWindow::on_action_2_triggered()
 {
     aboutDialog *about = new aboutDialog;
     about->show();
+}
+
+/*
+ * 「バンパーセンサ停止解除」ボタンコールバック
+ */
+void MainWindow::on_restartButton_clicked()
+{
+    // ステート変更なし
+
+    int button = QMessageBox::question(this, tr("バンパーセンサ停止解除確認"), tr(RESTART_MSG));
+
+    if (button == QMessageBox::Yes) {
+        QString sh = QString::asprintf(PATH_FORMAT,SH_FILEPATH,SH_RESTART);
+        qDebug() << "[MainWindow::on_restartButton_clicked]" << sh;
+        runShellscript(sh);
+    }
 }

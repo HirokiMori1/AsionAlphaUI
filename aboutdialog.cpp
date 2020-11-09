@@ -21,6 +21,20 @@ aboutDialog::aboutDialog(QWidget *parent) :
     kufushaPixmap = kufushaPixmap.scaled(ui->KufushaImgLabel->size());
     ui->KufushaImgLabel->setPixmap(kufushaPixmap);
 
+    // FDesignのイメージ貼り付け
+    QImage *fdesignImg = new QImage();
+    fdesignImg->load(FDESIGN_IMG);
+    QPixmap fdesignPixmap = QPixmap::fromImage(*fdesignImg);
+    fdesignPixmap = fdesignPixmap.scaled(ui->FDesignImgLabel->size());
+    ui->FDesignImgLabel->setPixmap(fdesignPixmap);
+
+    // CarrotSystemsのイメージ貼り付け
+    QImage *carrotImg = new QImage();
+    carrotImg->load(CARROT_IMG);
+    QPixmap carrotPixmap = QPixmap::fromImage(*carrotImg);
+    carrotPixmap = carrotPixmap.scaled(ui->CarrotImgLabel->size());
+    ui->CarrotImgLabel->setPixmap(carrotPixmap);
+
 
 }
 

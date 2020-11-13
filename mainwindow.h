@@ -32,13 +32,13 @@ private slots:
 
     void selectedMapNameChanged();
 
-    void on_dataLoadButton_clicked();
-
     void on_startButton_clicked();
 
     void on_action_2_triggered();
 
-    void on_restartButton_clicked();
+    void on_releaseBumperButton_clicked();
+
+    void on_navigationButton_clicked();
 
 private:
     Ui::MainWindow *ui;

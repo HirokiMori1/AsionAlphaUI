@@ -257,7 +257,7 @@ color: rgb(238, 238, 236);</string>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
-           <widget class="QPushButton" name="dataLoadButton">
+           <widget class="QPushButton" name="navigationButton">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -355,7 +355,7 @@ color: rgb(238, 238, 236);</string>
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="restartButton">
+           <widget class="QPushButton" name="releaseBumperButton">
             <property name="enabled">
              <bool>false</bool>
             </property>

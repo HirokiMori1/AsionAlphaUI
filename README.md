@@ -1,7 +1,12 @@
 # AsionAlphaUI
 
-We propose<br>
-easy to use,<br>
-easy to understand.<br>
+## How to install
 
-We expect everybody like Asion Alpha!
+1. $ cd 
+2. $ git clone ...
+3. $ cd AsionAlphaUI
+4. $ qtcreator
+5. compile
+6. $ ./build-AsionAlphaUI-unknown-Debug/AsionAlphaUI
+
+ToDo: We must make shellscript to setup ros environment variables just like wcfk_ui.sh!!

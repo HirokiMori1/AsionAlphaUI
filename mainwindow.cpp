@@ -211,43 +211,48 @@ void MainWindow::drawRoute(){
  */
 void MainWindow::on_navigationButton_clicked()
 {
-    // 読み込み開始時は操作できないようにする
-    ui->navigationButton->setEnabled(false);
-    ui->startButton->setEnabled(false);
-    ui->releaseBumperButton->setEnabled(false);
-    ui->stopButton->setEnabled(false);
-    ui->scrollArea->setEnabled(false);
+    int button = QMessageBox::question(this, tr("データ読み込み確認"), tr(NAVIGATION_MSG));
+    if (button == QMessageBox::Yes) {
 
-    // ラベルから地図番号を取得
-    QRegExp r("(\\d+)$");
-    r.indexIn(ui->selectedMapName->text());
-    QString mapNum = r.cap(0);
 
-    // navigation.sh実行
-    QString sh = QString::asprintf("%s%s %s",
-                                   SH_FILEPATH,
-                                   SH_NAVIGATION,
-                                   mapNum.toLocal8Bit().constData());
-    qDebug() << "[MainWindow::on_navigationButton_clicked]" << sh;
+        // 読み込み開始時は操作できないようにする
+        ui->navigationButton->setEnabled(false);
+        ui->startButton->setEnabled(false);
+        ui->releaseBumperButton->setEnabled(false);
+        ui->stopButton->setEnabled(false);
+        ui->scrollArea->setEnabled(false);
 
-    runShellscript(sh);
+        // ラベルから地図番号を取得
+        QRegExp r("(\\d+)$");
+        r.indexIn(ui->selectedMapName->text());
+        QString mapNum = r.cap(0);
 
-    // 起動待ちダイアログ表示
-    waitMessageDialog *dialog = new waitMessageDialog;
-    dialog->setModal(true);
-    dialog->show();
-    QTimer dlg_timer;           // ダイアログ表示時間用のタイマー
-    dlg_timer.start(6 * 1000);
-    connect(&dlg_timer, SIGNAL(timeout()), dialog, SLOT(close()));
-    QTimer update_timer;
-    update_timer.start(1000);   // 進捗バー表示用タイマー
-    connect(&update_timer, SIGNAL(timeout()), dialog, SLOT(update()));
+        // navigation.sh実行
+        QString sh = QString::asprintf("%s%s %s",
+                                       SH_FILEPATH,
+                                       SH_NAVIGATION,
+                                       mapNum.toLocal8Bit().constData());
+        qDebug() << "[MainWindow::on_navigationButton_clicked]" << sh;
 
-    dialog->exec();
-    dlg_timer.stop();
+        runShellscript(sh);
 
-    ui->startButton->setEnabled(true);
-    ui->stopButton->setEnabled(true);
+        // 起動待ちダイアログ表示
+        waitMessageDialog *dialog = new waitMessageDialog;
+        dialog->setModal(true);
+        dialog->show();
+        QTimer dlg_timer;           // ダイアログ表示時間用のタイマー
+        dlg_timer.start(6 * 1000);
+        connect(&dlg_timer, SIGNAL(timeout()), dialog, SLOT(close()));
+        QTimer update_timer;
+        update_timer.start(1000);   // 進捗バー表示用タイマー
+        connect(&update_timer, SIGNAL(timeout()), dialog, SLOT(update()));
+
+        dialog->exec();
+        dlg_timer.stop();
+
+        ui->startButton->setEnabled(true);
+        ui->stopButton->setEnabled(true);
+    }
 }
 
 /*
@@ -260,7 +265,7 @@ void MainWindow::on_startButton_clicked()
 
         // ステート変更
         ui->navigationButton->setEnabled(false);
-        ui->startButton->setEnabled(false);
+        ui->startButton->setEnabled(true);
         ui->releaseBumperButton->setEnabled(true);
         ui->stopButton->setEnabled(true);
         ui->scrollArea->setEnabled(false);
@@ -287,7 +292,7 @@ void MainWindow::on_stopButton_clicked()
 {
     // ステート変更
     ui->navigationButton->setEnabled(true);
-    ui->startButton->setEnabled(false);
+    ui->startButton->setEnabled(true);
     ui->releaseBumperButton->setEnabled(false);
     ui->stopButton->setEnabled(false);
     ui->scrollArea->setEnabled(true);

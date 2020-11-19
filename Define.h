@@ -44,6 +44,7 @@
 
 #define ROUTE_YAML  "route999.yaml"
 
+#define NAVIGATION_MSG     "Asionはスタート位置にいますか？"
 #define START_MSG          "Asionはスタート位置にいますか？"
 #define RELEASE_BUMPER_MSG "再スタートします。Asionの周囲は問題ないですか？"
 

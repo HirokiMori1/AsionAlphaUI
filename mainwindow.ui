@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1213</width>
+    <width>1323</width>
     <height>903</height>
    </rect>
   </property>
@@ -426,7 +426,7 @@ color: rgb(238, 238, 236);</string>
              </font>
             </property>
             <property name="text">
-             <string>停止</string>
+             <string>スタートに戻る</string>
             </property>
             <property name="iconSize">
              <size>
@@ -465,7 +465,7 @@ color: rgb(238, 238, 236);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1213</width>
+     <width>1323</width>
      <height>28</height>
     </rect>
    </property>

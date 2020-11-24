@@ -291,7 +291,7 @@ void MainWindow::on_startButton_clicked()
 void MainWindow::on_stopButton_clicked()
 {
     // ステート変更
-    ui->navigationButton->setEnabled(true);
+    ui->navigationButton->setEnabled(false);
     ui->startButton->setEnabled(true);
     ui->releaseBumperButton->setEnabled(false);
     ui->stopButton->setEnabled(false);

@@ -4,6 +4,7 @@
 #include "Define.h"
 #include "waitmessagedialog.h"
 #include "aboutdialog.h"
+#include "license.h"
 
 #include <QDir>
 #include <QDirIterator>
@@ -337,3 +338,9 @@ void MainWindow::on_releaseBumperButton_clicked()
     }
 }
 
+
+void MainWindow::on_action_3_triggered()
+{
+    licenseDialog *license = new licenseDialog;
+    license->show();
+}

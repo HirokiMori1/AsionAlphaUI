@@ -49,5 +49,6 @@
 #define RELEASE_BUMPER_MSG "再スタートします。Asionの周囲は問題ないですか？"
 
 #define COPYRIGHT "Copyrigth(c) Kufusha Inc., 2020, All Rights Reserved."
+#define OSSLICFILE "/home/kufushatec/AsionAlphaUI/licenses/third-party-licenses.txt"
 
 #endif // DEFINE_H

@@ -480,6 +480,7 @@ color: rgb(238, 238, 236);</string>
      <string>ヘルプ</string>
     </property>
     <addaction name="action_2"/>
+    <addaction name="action_3"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -497,6 +498,11 @@ color: rgb(238, 238, 236);</string>
   <action name="action_2">
    <property name="text">
     <string>このツールについて</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>オープンソースソフトウェア</string>
    </property>
   </action>
  </widget>

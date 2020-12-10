@@ -28,7 +28,7 @@ public:
 private slots:
     void on_action_triggered();
 
-    void on_stopButton_clicked();
+    void on_goHomeButton_clicked();
 
     void selectedMapNameChanged();
 

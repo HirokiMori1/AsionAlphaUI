@@ -40,7 +40,7 @@
 #define SH_NAVIGATION     "navigation.sh"
 #define SH_START          "start.sh"
 #define SH_RELEASE_BUMPER "release_bumper.sh"
-#define SH_STOP           "stop.sh"
+#define SH_GOHOME         "stop.sh"
 
 #define ROUTE_YAML  "route999.yaml"
 

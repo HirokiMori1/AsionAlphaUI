@@ -56,9 +56,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QIcon releaseBumperIcon(releaseBumperPixmap);
     ui->releaseBumperButton->setIcon(releaseBumperIcon);
 
-    QPixmap stopPixmap(STOP_IMG);
-    QIcon stopIcon(stopPixmap);
-    ui->stopButton->setIcon(stopIcon);
+    QPixmap goHomePixmap(STOP_IMG);
+    QIcon goHomeIcon(goHomePixmap);
+    ui->goHomeButton->setIcon(goHomeIcon);
 
     findMap();
 
@@ -153,9 +153,9 @@ void MainWindow::selectedMapNameChanged() {
     drawRoute();
 
     ui->navigationButton->setEnabled(true);   // マップが選択されたのでデータ読み込みボタンは押下できる
-    ui->startButton->setEnabled(false);     // データ読み込み前なのでstart/stopボタンは押下できない
+    ui->startButton->setEnabled(false);     // データ読み込み前なのでstart/goHomeボタンは押下できない
     ui->releaseBumperButton->setEnabled(false);
-    ui->stopButton->setEnabled(false);
+    ui->goHomeButton->setEnabled(false);
 }
 
 /*
@@ -220,7 +220,7 @@ void MainWindow::on_navigationButton_clicked()
         ui->navigationButton->setEnabled(false);
         ui->startButton->setEnabled(false);
         ui->releaseBumperButton->setEnabled(false);
-        ui->stopButton->setEnabled(false);
+        ui->goHomeButton->setEnabled(false);
         ui->scrollArea->setEnabled(false);
 
         // ラベルから地図番号を取得
@@ -252,7 +252,7 @@ void MainWindow::on_navigationButton_clicked()
         dlg_timer.stop();
 
         ui->startButton->setEnabled(true);
-        ui->stopButton->setEnabled(true);
+        ui->goHomeButton->setEnabled(true);
     }
 }
 
@@ -268,7 +268,7 @@ void MainWindow::on_startButton_clicked()
         ui->navigationButton->setEnabled(false);
         ui->startButton->setEnabled(true);
         ui->releaseBumperButton->setEnabled(true);
-        ui->stopButton->setEnabled(true);
+        ui->goHomeButton->setEnabled(true);
         ui->scrollArea->setEnabled(false);
 
         // ラベルから地図番号を取得
@@ -287,19 +287,19 @@ void MainWindow::on_startButton_clicked()
 }
 
 /*
- * 「停止ボタン」のコールバック関数
+ * 「スタートに戻る」ボタンのコールバック関数
  */
-void MainWindow::on_stopButton_clicked()
+void MainWindow::on_goHomeButton_clicked()
 {
     // ステート変更
     ui->navigationButton->setEnabled(false);
     ui->startButton->setEnabled(true);
-    ui->releaseBumperButton->setEnabled(false);
-    ui->stopButton->setEnabled(false);
+    ui->releaseBumperButton->setEnabled(true);
+    ui->goHomeButton->setEnabled(true);
     ui->scrollArea->setEnabled(true);
 
-    QString sh = QString::asprintf(PATH_FORMAT,SH_FILEPATH,SH_STOP);
-    qDebug() << "[MainWindow::on_stopButton_clicked]" << sh;
+    QString sh = QString::asprintf(PATH_FORMAT,SH_FILEPATH,SH_GOHOME);
+    qDebug() << "[MainWindow::on_goHomeButton_clicked]" << sh;
     runShellscript(sh);
 }
 

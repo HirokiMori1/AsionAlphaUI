@@ -42,13 +42,15 @@
 #define SH_RELEASE_BUMPER "release_bumper.sh"
 #define SH_GOHOME         "stop.sh"
 
-#define ROUTE_YAML  "route999.yaml"
+#define LICENSES_PATH     "/home/kufushatec/AsionAlphaUI/licenses/"
+#define SH_COPYRIGHT      "osscopyright.sh"
+
+#define ROUTE_YAML        "route999.yaml"
 
 #define NAVIGATION_MSG     "Asionはスタート位置にいますか？"
 #define START_MSG          "Asionはスタート位置にいますか？"
 #define RELEASE_BUMPER_MSG "再スタートします。Asionの周囲は問題ないですか？"
 
 #define COPYRIGHT "Copyrigth(c) Kufusha Inc., 2020, All Rights Reserved."
-#define OSSLICFILE "/home/kufushatec/AsionAlphaUI/licenses/third-party-licenses.txt"
 
 #endif // DEFINE_H

@@ -18,7 +18,9 @@ public:
     ~aboutDialog();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_closeButton_clicked();
+
+    void on_ossLicButton_clicked();
 
 private:
     Ui::aboutDialog *ui;

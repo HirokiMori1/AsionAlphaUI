@@ -31,8 +31,7 @@ SOURCES += \
     YamlReader.cpp \
     ProcessingFileUtil.cpp \
     waitmessagedialog.cpp \
-    aboutdialog.cpp \
-    license.cpp
+    aboutdialog.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,15 +41,13 @@ HEADERS += \
     YamlReader.h \
     ProcessingFileUtil.h \
     waitmessagedialog.h \
-    aboutdialog.h \
-    license.h
+    aboutdialog.h
 
 FORMS += \
         mainwindow.ui \
     Thumbnail.ui \
     waitmessagedialog.ui \
-    aboutdialog.ui \
-    licensedialog.ui
+    aboutdialog.ui
 
 unix:!macx: LIBS += -L$$PWD/../../../usr/lib/x86_64-linux-gnu/ -lyaml-cpp
 

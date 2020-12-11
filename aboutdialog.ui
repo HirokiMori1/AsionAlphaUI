@@ -62,7 +62,7 @@
          <item>
           <widget class="QLabel" name="label">
            <property name="text">
-            <string>(Qt 5.9.5)</string>
+            <string>(Qt 5.9.5 LGPL版)</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -231,6 +231,13 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
+      <widget class="QPushButton" name="ossLicButton">
+       <property name="text">
+        <string>OSS Licenses</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -244,7 +251,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="closeButton">
        <property name="text">
         <string>閉じる</string>
        </property>

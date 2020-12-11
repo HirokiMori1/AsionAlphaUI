@@ -4,7 +4,6 @@
 #include "Define.h"
 #include "waitmessagedialog.h"
 #include "aboutdialog.h"
-#include "license.h"
 
 #include <QDir>
 #include <QDirIterator>
@@ -306,9 +305,9 @@ void MainWindow::on_goHomeButton_clicked()
 /*
  * [ファイル]->[終了]
  */
-void MainWindow::on_action_triggered()
+void MainWindow::on_actionQuit_triggered()
 {
-    qDebug() << "[MainWindow::on_action_triggered]";
+    qDebug() << "[MainWindow::on_actionQuit_triggered]";
 
     QApplication::quit();
 }
@@ -316,8 +315,10 @@ void MainWindow::on_action_triggered()
 /*
  * [ヘルプ]->[このツールについて]
  */
-void MainWindow::on_action_2_triggered()
+void MainWindow::on_actionAbout_triggered()
 {
+    qDebug() << "[MainWindow::on_actionAbout_triggered]";
+
     aboutDialog *about = new aboutDialog;
     about->show();
 }
@@ -336,11 +337,4 @@ void MainWindow::on_releaseBumperButton_clicked()
         qDebug() << "[MainWindow::on_releaseBumperButton_clicked]" << sh;
         runShellscript(sh);
     }
-}
-
-
-void MainWindow::on_action_3_triggered()
-{
-    licenseDialog *license = new licenseDialog;
-    license->show();
 }

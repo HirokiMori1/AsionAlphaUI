@@ -1,3 +1,6 @@
+#include <QDebug>
+#include <QProcess>
+
 #include "aboutdialog.h"
 #include "ui_aboutdialog.h"
 
@@ -43,7 +46,21 @@ aboutDialog::~aboutDialog()
     delete ui;
 }
 
-void aboutDialog::on_pushButton_clicked()
+/*
+ * 「Close」ボタンコールバック
+ */
+void aboutDialog::on_closeButton_clicked()
 {
     this->close();
+}
+
+/*
+ * 「OSS Licenses」ボタンコールバック
+ */
+void aboutDialog::on_ossLicButton_clicked()
+{
+    QString sh = QString::asprintf(PATH_FORMAT,LICENSES_PATH,SH_COPYRIGHT);
+    qDebug() << "[aboutDialog::on_ossLicButton_clicked]" << sh;
+    QProcess *process = new QProcess(this);
+    process->startDetached(sh);
 }

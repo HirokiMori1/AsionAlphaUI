@@ -26,7 +26,7 @@ public:
     FileUtil *_fileutil;
 
 private slots:
-    void on_action_triggered();
+    void on_actionQuit_triggered();
 
     void on_goHomeButton_clicked();
 
@@ -34,13 +34,11 @@ private slots:
 
     void on_startButton_clicked();
 
-    void on_action_2_triggered();
+    void on_actionAbout_triggered();
 
     void on_releaseBumperButton_clicked();
 
     void on_navigationButton_clicked();
-
-    void on_action_3_triggered();
 
 private:
     Ui::MainWindow *ui;

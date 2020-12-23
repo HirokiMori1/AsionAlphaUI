@@ -36,6 +36,16 @@ find /home/kufushatec/AsionAlphaUI/licenses/OSS -name COPYRIGHT.txt | \
     awk '{print "<a href=\"/home/kufushatec/AsionAlphaUI/licenses/OSS/" $1 "/COPYRIGHT.txt\">" $1 "</a><br>"}' | \
     sort >> ${FILE}
 
+find /home/kufushatec/AsionAlphaUI/licenses/OSS -name package.xml | \
+    sed "s/\/home\/kufushatec\/AsionAlphaUI\/licenses\/OSS\///" | sed "s/\/package.xml//" | \
+    awk '{print "<a href=\"/home/kufushatec/AsionAlphaUI/licenses/OSS/" $1 "/package.xml\">" $1 "</a><br>"}' | \
+    sort >> ${FILE}
+
+find /home/kufushatec/AsionAlphaUI/licenses/OSS -name PKG-INFO | \
+    sed "s/\/home\/kufushatec\/AsionAlphaUI\/licenses\/OSS\///" | sed "s/\/PKG-INFO//" | \
+    awk '{print "<a href=\"/home/kufushatec/AsionAlphaUI/licenses/OSS/" $1 "/PKG-INFO\">" $1 "</a><br>"}' | \
+    sort >> ${FILE}
+
 cat ${OSSLIC} >> ${FILE}
 
 echo "</body>" >> ${FILE}

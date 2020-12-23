@@ -1,0 +1,8 @@
+rosclean: cleanup filesystem resources (e.g. log files).
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>, Jacob Perron <jacob AT openrobotics DOT org>
+    Author: Ken Conley, Dirk Thomas <dthomas AT openrobotics DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros/issues
+    Source: git https://github.com/ros/ros.git (branch: noetic-devel)

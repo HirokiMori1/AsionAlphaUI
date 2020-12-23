@@ -1,0 +1,7 @@
+tf2_geometry_msgs
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author: Wim Meeussen
+    License: BSD
+    Source: git https://github.com/ros/geometry2.git (branch: melodic-devel)

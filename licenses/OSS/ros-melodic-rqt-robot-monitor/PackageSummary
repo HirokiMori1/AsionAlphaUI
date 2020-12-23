@@ -1,0 +1,13 @@
+rqt_robot_monitor displays diagnostics_agg topics messages that are published by diagnostic_aggregator. rqt_robot_monitor is a direct port to rqt of robot_monitor. All diagnostics are fall into one of three tree panes depending on the status of diagnostics (normal, warning, error/stale). Status are shown in trees to represent their hierarchy. Worse status dominates the higher level status.
+
+    Ex. 'Computer' category has 3 sub devices. 2 are green but 1 is error. Then 'Computer' becomes error. 
+
+You can look at the detail of each status by double-clicking the tree nodes.
+Currently re-usable API to other pkgs are not explicitly provided.
+
+    Maintainer status: maintained
+    Maintainer: Aaron Blasdel <ablasdel AT gmail DOT com>, Arne Hitzmann <arne.hitzmann AT gmail DOT com>, Austin Hendrix <namniart AT gmail DOT com>
+    Author: Austin Hendrix, Isaac Saito, Ze'ev Klapow, Kevin Watts, Josh Faust
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_robot_monitor/issues
+    Source: git https://github.com/ros-visualization/rqt_robot_monitor.git (branch: master)

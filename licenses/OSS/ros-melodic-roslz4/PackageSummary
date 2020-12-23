@@ -1,0 +1,7 @@
+A Python and C++ implementation of the LZ4 streaming format. Large data streams are split into blocks which are compressed using the very fast LZ4 compression algorithm.
+
+    Maintainer status: maintained
+    Maintainer: Jacob Perron <jacob AT openrobotics DOT org>, Michael Carroll <michael AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Ben Charrow <bcharrow AT seas.upenn DOT edu>
+    License: BSD
+    Source: git https://github.com/ros/ros_comm.git (branch: melodic-devel)

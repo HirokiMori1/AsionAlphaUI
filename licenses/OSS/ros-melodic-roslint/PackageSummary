@@ -1,0 +1,8 @@
+CMake lint commands for ROS packages. The lint commands perform static checking of Python or C++ source code for errors and standards compliance.
+
+    Maintainer status: maintained
+    Maintainer: Mike Purvis <mpurvis AT clearpathrobotics DOT com>, Alex Henning <ahenning AT fetchrobotics DOT com>
+    Author: Mike Purvis, Jack O'Quin
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/roslint/issues
+    Source: git https://github.com/ros/roslint.git (branch: master)

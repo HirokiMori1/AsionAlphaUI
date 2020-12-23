@@ -1,0 +1,7 @@
+EusLisp ROS message and service generators.
+
+    Maintainer status: maintained
+    Maintainer: Kei Okada <k-okada AT jsk.t.u-tokyo.ac DOT jp>
+    Author: Kei Okada
+    License: BSD
+    Source: git https://github.com/jsk-ros-pkg/geneus.git (branch: master)

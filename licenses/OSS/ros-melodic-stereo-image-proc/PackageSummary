@@ -1,0 +1,7 @@
+Stereo and single image rectification and disparity processing.
+
+    Maintainer status: developed
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>
+    Author: Patrick Mihelich, Kurt Konolige, Jeremy Leibs
+    License: BSD
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: indigo)

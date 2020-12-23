@@ -1,0 +1,8 @@
+Messages for (camera) view controllers
+
+    Maintainer status: unmaintained
+    Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages AT googlegroups DOT com>
+    Author: Adam Leeper <adamleeper AT gmail DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/view_controller_msgs/issues
+    Source: git https://github.com/ros-visualization/view_controller_msgs.git (branch: lunar-devel)

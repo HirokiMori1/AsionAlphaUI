@@ -1,0 +1,7 @@
+posedetection_msgs provides messages and services to facilitate passing pose detection results and features.
+
+    Maintainer status: developed
+    Maintainer: Kei Okada <k-okada AT jsk.t.u-tokyo.ac DOT jp>
+    Author: Rosen Diankov
+    License: BSD
+    Source: git https://github.com/jsk-ros-pkg/jsk_common_msgs.git (branch: master)

@@ -1,0 +1,7 @@
+ROS communications-related packages, including core client libraries (roscpp, rospy) and graph introspection tools (rostopic, rosnode, rosservice, rosparam).
+
+    Maintainer status: maintained
+    Maintainer: Jacob Perron <jacob AT openrobotics DOT org>, Michael Carroll <michael AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Morgan Quigley <mquigley AT cs.stanford DOT edu>, Eric Berger <berger AT willowgarage DOT com>, Ken Conley <kwc AT willowgarage DOT com>, Rosen Diankov <rdiankov AT cs.cmu DOT edu>, Josh Faust <jfaust AT willowgarage DOT com>, Tim Field <tfield AT willowgarage DOT com>, Tully Foote <tfoote AT osrfoundation DOT org>, Brian Gerkey <gerkey AT willowgarage DOT com>, Jeremy Leibs <leibs AT willowgarage DOT com>, Bhaskara Marthi <bhaskara AT willowgarage DOT com>, Troy Straszheim <straszheim AT willowgarage DOT com>, Rob Wheeler <wheeler AT willowgarage DOT com>, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros/ros_comm.git (branch: noetic-devel)

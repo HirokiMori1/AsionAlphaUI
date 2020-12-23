@@ -1,0 +1,9 @@
+Controller for a differential drive mobile base.
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>, Enrique Fernandez <enrique.fernandez.perdomo AT gmail DOT com>
+    Author: Bence Magyar <bence.magyar AT pal-robotics DOT com>
+    License: BSD
+    External website: https://github.com/ros-controls/ros_controllers/wiki
+    Bug / feature tracker: https://github.com/ros-controls/ros_controllers/issues
+    Source: git https://github.com/ros-controls/ros_controllers.git (branch: melodic-devel)

@@ -1,0 +1,8 @@
+Standalone Python library for generating ROS message and service data structures for various languages.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Troy Straszheim, Morten Kjaergaard, Ken Conley, Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/genmsg/issues
+    Source: git https://github.com/ros/genmsg.git (branch: kinetic-devel)

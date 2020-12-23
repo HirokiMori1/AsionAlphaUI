@@ -1,0 +1,7 @@
+ Contains a node publish an image stream from single image file or avi motion file.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>, Autonomoustuff team <software AT autonomoustuff DOT com>
+    Author: Kei Okada
+    License: BSD
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: noetic)

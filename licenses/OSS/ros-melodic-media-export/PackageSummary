@@ -1,0 +1,7 @@
+Placeholder package enabling generic export of media paths.
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Dave Hershberger
+    License: BSD
+    Source: git https://github.com/ros/media_export.git (branch: indigo-devel)

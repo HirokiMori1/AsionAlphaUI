@@ -1,0 +1,9 @@
+tf2_msgs
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author: Eitan Marder-Eppstein
+    License: BSD
+    Source: git https://github.com/ros/geometry2.git (branch: melodic-devel)
+
+This is the package grouping the Transform and Error messages used by tf2 and tf2_ros. 

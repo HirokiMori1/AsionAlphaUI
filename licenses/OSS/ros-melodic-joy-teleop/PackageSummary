@@ -1,0 +1,7 @@
+A (to be) generic joystick interface to control a robot
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>
+    Author: Paul Mathieu <paul.mathieu AT pal-robotics DOT com>
+    License: BSD
+    Source: git https://github.com/ros-teleop/teleop_tools.git (branch: kinetic-devel)

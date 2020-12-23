@@ -1,0 +1,7 @@
+Assorted shell commands for using ros with bash.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>, Jacob Perron <jacob AT openrobotics DOT org>
+    Author: Jeremy Leibs, Thibault Kruse, Dirk Thomas <dthomas AT openrobotics DOT org>
+    License: BSD
+    Source: git https://github.com/ros/ros.git (branch: noetic-devel)

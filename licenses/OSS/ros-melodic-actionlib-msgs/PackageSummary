@@ -1,0 +1,7 @@
+actionlib_msgs defines the common messages to interact with an action server and an action client. For full documentation of the actionlib API see the actionlib package.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>
+    Author: Vijay Pradeep, Tully Foote <tfoote AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros/common_msgs.git (branch: noetic-devel)

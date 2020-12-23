@@ -1,0 +1,7 @@
+Common service definitions.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>
+    Author: Morgan Quigley, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros/ros_comm_msgs.git (branch: kinetic-devel)

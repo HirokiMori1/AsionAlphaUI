@@ -1,0 +1,8 @@
+rosmsg contains two command-line tools: rosmsg and rossrv. rosmsg is a command-line tool for displaying information about ROS Message types. rossrv is a command-line tool for displaying information about ROS Service types.
+
+    Maintainer status: maintained
+    Maintainer: Jacob Perron <jacob AT openrobotics DOT org>, Michael Carroll <michael AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Ken Conley, Tully Foote, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros_comm/issues
+    Source: git https://github.com/ros/ros_comm.git (branch: melodic-devel)

@@ -1,0 +1,7 @@
+Provides nodes to assemble point clouds from either LaserScan or PointCloud messages
+
+    Maintainer status: maintained
+    Maintainer: Jonathan Binney <jon.binney AT gmail DOT com>
+    Author: Vijay Pradeep
+    License: BSD
+    Source: git https://github.com/ros-perception/laser_assembler.git (branch: noetic-devel)

@@ -1,0 +1,8 @@
+turtle_tf demonstrates how to write a tf broadcaster and listener with the turtlesim. The tutle_tf_listener commands turtle2 to follow turtle1 around as you drive turtle1 using the keyboard.
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: James Bowman, Isaac Saito <isaito AT willowgarage DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/geometry_tutorials/issues
+    Source: git https://github.com/ros/geometry_tutorials.git (branch: indigo-devel)

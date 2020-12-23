@@ -1,0 +1,7 @@
+3D interactive marker communication library for RViz and similar tools.
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: David Gossow
+    License: BSD
+    Source: git https://github.com/ros-visualization/interactive_markers.git (branch: noetic-devel)

@@ -1,0 +1,8 @@
+Low-level build system macros and infrastructure for ROS.
+
+    Maintainer status: maintained
+    Maintainer: Michael Carroll <michael AT openrobotics DOT org>, Tully Foote <tfoote AT openrobotics DOT org>
+    Author: Troy Straszheim, Morten Kjaergaard, Brian Gerkey, Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/catkin/issues
+    Source: git https://github.com/ros/catkin.git (branch: noetic-devel)

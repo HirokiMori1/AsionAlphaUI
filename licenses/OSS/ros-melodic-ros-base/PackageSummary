@@ -1,0 +1,8 @@
+A metapackage which extends ros_core and includes other basic non-robot tools like actionlib, dynamic reconfigure, nodelets, and pluginlib.
+
+    Maintainer status: maintained
+    Maintainer: Mikael Arguedas <mikael AT osrfoundation DOT org>
+    Author: Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/metapackages/issues
+    Source: git https://github.com/ros/metapackages.git (branch: melodic-devel)

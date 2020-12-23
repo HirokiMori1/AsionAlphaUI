@@ -1,0 +1,7 @@
+`image_geometry` contains C++ and Python libraries for interpreting images geometrically. It interfaces the calibration parameters in sensor_msgs/CameraInfo messages with OpenCV functions such as image rectification, much as cv_bridge interfaces ROS sensor_msgs/Image with OpenCV data types.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>
+    Author: Patrick Mihelich
+    License: BSD
+    Source: git https://github.com/ros-perception/vision_opencv.git (branch: noetic)

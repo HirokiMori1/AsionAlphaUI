@@ -1,0 +1,7 @@
+This package contains a set of conversion functions to convert common tf datatypes (point, vector, pose, etc) into semantically identical datatypes used by other libraries. The conversion functions make it easier for users of the transform library (tf) to work with the datatype of their choice. Currently this package has support for the Kinematics and Dynamics Library (KDL) and the Eigen matrix library. This package is stable, and will get integrated into tf in the next major release cycle (see roadmap).
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author: Tully Foote
+    License: BSD
+    Source: git https://github.com/ros/geometry.git (branch: melodic-devel)

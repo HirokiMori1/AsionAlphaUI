@@ -1,0 +1,8 @@
+This package contains a C++ base class for URDF parsers.
+
+    Maintainer status: maintained
+    Maintainer: Chris Lalancette <clalancette AT osrfoundation DOT org>, Shane Loretz <sloretz AT osrfoundation DOT org>
+    Author: Ioan Sucan <isucan AT gmail DOT com>, Jackie Kay <jacquelinekay1 AT gmail DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/urdf/issues
+    Source: git https://github.com/ros/urdf.git (branch: melodic-devel)

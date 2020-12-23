@@ -1,0 +1,7 @@
+jsk_hark_msgs
+
+    Maintainer status: developed
+    Maintainer: Shohei Fujii <s-fujii AT jsk.t.u-tokyo.ac DOT jp>
+    Author: Shohei Fujii <s-fujii AT jsk.t.u-tokyo.ac DOT jp>
+    License: BSD
+    Source: git https://github.com/jsk-ros-pkg/jsk_common_msgs.git (branch: master)

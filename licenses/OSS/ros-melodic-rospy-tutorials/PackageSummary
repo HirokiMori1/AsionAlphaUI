@@ -1,0 +1,8 @@
+This package attempts to show the features of ROS python API step-by-step, including using messages, servers, parameters, etc. These tutorials are compatible with the nodes in roscpp_tutorial.
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Ken Conley, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros_tutorials/issues
+    Source: git https://github.com/ros/ros_tutorials.git (branch: noetic-devel)

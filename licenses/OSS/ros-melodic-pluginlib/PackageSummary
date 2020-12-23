@@ -1,0 +1,8 @@
+The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure. To work, these tools require plugin providers to register their plugins in the package.xml of their package.
+
+    Maintainer status: maintained
+    Maintainer: Steven! Ragnarök <stevenragnarok AT osrfoundation DOT org>
+    Author: Eitan Marder-Eppstein, Tully Foote, Dirk Thomas, Mirza Shah
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/pluginlib/issues
+    Source: git https://github.com/ros/pluginlib.git (branch: noetic-devel)

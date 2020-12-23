@@ -1,0 +1,7 @@
+control_msgs contains base messages and actions useful for controlling robots. It provides representations for controller setpoints and joint and cartesian trajectories.
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>
+    Author: Stuart Glaser <sglaser AT willowgarage DOT com>
+    License: BSD
+    Source: git https://github.com/ros-controls/control_msgs.git (branch: kinetic-devel)

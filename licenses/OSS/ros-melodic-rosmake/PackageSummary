@@ -1,0 +1,10 @@
+rosmake is a ros dependency aware build tool which can be used to build all dependencies in the correct order.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Tully Foote <tfoote AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros/issues
+    Source: git https://github.com/ros/ros.git (branch: kinetic-devel)
+
+

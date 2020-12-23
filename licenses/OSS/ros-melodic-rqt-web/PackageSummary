@@ -1,0 +1,8 @@
+rqt_web is a simple web content viewer for rqt. Users can show web content in Qt-based window by specifying its URL.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>, Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Aaron Blasdel
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_web/issues
+    Source: git https://github.com/ros-visualization/rqt_web.git (branch: master)

@@ -1,0 +1,8 @@
+Metapackage of geometry tutorials ROS.
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Tully Foote <tfoote AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/geometry_tutorials/issues
+    Source: git https://github.com/ros/geometry_tutorials.git (branch: kinetic-devel)

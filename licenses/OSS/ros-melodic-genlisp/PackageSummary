@@ -1,0 +1,7 @@
+Lisp client library for ROS, the Robot Operating System.
+
+    Maintainer status: maintained
+    Maintainer: Gayane Kazhoyan <kazhoyan AT cs.uni-bremen DOT de>
+    Author: Bhaskara Marthi, Brian Gerkey, Lorenz Moesenlechner <moesenle AT cs.tum DOT edu>, Thibault Kruse
+    License: BSD
+    Source: git https://github.com/ros/roslisp.git (branch: master)

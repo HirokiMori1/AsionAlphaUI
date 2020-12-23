@@ -1,0 +1,8 @@
+rqt_pose_view provides a GUI plugin for visualizing 3D poses.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>, Dorian Scholz <scholz AT sim.tu-darmstadt DOT de>, Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Dorian Scholz
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_pose_view/issues
+    Source: git https://github.com/ros-visualization/rqt_pose_view.git (branch: master)

@@ -1,0 +1,8 @@
+This package retrieves data from url-format files such as http://, ftp://, package:// file://, etc., and loads the data into memory. The package:// url for ros packages is translated into a local file:// url. The resourse retriever was initially designed to load mesh files into memory, but it can be used for any type of data. The resource retriever is based on the the libcurl library.
+
+    Maintainer status: maintained
+    Maintainer: Chris Lalancette <clalancette AT osrfoundation DOT org>, Shane Loretz <sloretz AT osrfoundation DOT org>
+    Author: Josh Faust <jfaust AT willowgarage DOT com>, Ioan Sucan <isucan AT gmail DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/resource_retriever/issues
+    Source: git https://github.com/ros/resource_retriever.git (branch: kinetic-devel)

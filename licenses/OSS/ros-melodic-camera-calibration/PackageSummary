@@ -1,0 +1,7 @@
+camera_calibration allows easy calibration of monocular or stereo cameras using a checkerboard calibration target.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>, Autonomoustuff team <software AT autonomoustuff DOT com>
+    Author: James Bowman, Patrick Mihelich
+    License: BSD
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: noetic)

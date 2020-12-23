@@ -1,0 +1,7 @@
+rosbuild contains scripts for managing the CMake-based build system for ROS.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>, Jacob Perron <jacob AT openrobotics DOT org>
+    Author: Brian Gerkey, Troy Straszheim, Morgan Quigley, Dirk Thomas <dthomas AT openrobotics DOT org>
+    License: BSD
+    Source: git https://github.com/ros/ros.git (branch: noetic-devel)

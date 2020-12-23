@@ -1,0 +1,7 @@
+Theora_image_transport provides a plugin to image_transport for transparently sending an image stream encoded with the Theora codec.
+
+    Maintainer status: maintained
+    Maintainer: Julius Kammerl <jkammerl AT willowgarage DOT com>
+    Author: Patrick Mihelich, Ethan Dreyfuss
+    License: BSD
+    Source: git https://github.com/ros-perception/image_transport_plugins.git (branch: indigo-devel)

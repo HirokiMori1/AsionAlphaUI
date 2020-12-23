@@ -1,0 +1,8 @@
+rqt_console provides a GUI plugin for displaying and filtering ROS messages.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>, Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Aaron Blasdel
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_console/issues
+    Source: git https://github.com/ros-visualization/rqt_console.git (branch: master)

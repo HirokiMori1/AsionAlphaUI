@@ -1,0 +1,10 @@
+rqt_logger_level provides a GUI plugin for configuring the logger level of ROS nodes.
+
+rqt_logger_level takes over `wx`-based tool [[rxloggerlevel]].
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>, Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Aaron Blasdel
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_logger_level/issues
+    Source: git https://github.com/ros-visualization/rqt_logger_level.git (branch: master)

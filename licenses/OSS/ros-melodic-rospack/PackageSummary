@@ -1,0 +1,8 @@
+ROS Package Tool
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Brian Gerkey, Morgan Quigley, Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/rospack/issues
+    Source: git https://github.com/ros/rospack.git (branch: melodic-devel)

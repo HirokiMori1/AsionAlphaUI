@@ -1,0 +1,7 @@
+Meta-package of libraries for processing laser data, including converting laser data into 3D representations.
+
+    Maintainer status: maintained
+    Maintainer: Jonathan Binney <jon.binney AT gmail DOT com>
+    Author:
+    License: BSD
+    Source: git https://github.com/ros-perception/laser_pipeline.git (branch: noetic-devel)

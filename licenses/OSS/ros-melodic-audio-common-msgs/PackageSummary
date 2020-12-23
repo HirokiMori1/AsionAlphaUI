@@ -1,0 +1,10 @@
+Messages for transmitting audio via ROS
+
+    Maintainer status: maintained
+    Maintainer: Austin Hendrix <namniart AT gmail DOT com>, Shingo Kitagawa <shingogo.5511 AT gmail DOT com>
+    Author: Nate Koenig
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-drivers/audio_common/issues
+    Source: git https://github.com/ros-drivers/audio_common.git (branch: master)
+
+See audio_common/Tutorials for usage. 

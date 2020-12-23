@@ -1,0 +1,8 @@
+rqt_tf_tree provides a GUI plugin for visualizing the ROS TF frame tree.
+
+    Maintainer status: maintained
+    Maintainer: Isaac I.Y. Saito <gm130s AT gmail DOT com>, Peter Han <peter9606 AT gmail DOT com>, Mabel Zhang <mabel AT openrobotics DOT org>
+    Author: Thibault Kruse
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_tf_tree/issues
+    Source: git https://github.com/ros-visualization/rqt_tf_tree.git (branch: master)

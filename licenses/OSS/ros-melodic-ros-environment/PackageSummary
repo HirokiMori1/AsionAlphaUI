@@ -1,0 +1,8 @@
+The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author:
+    License: Apache License 2.0
+    Bug / feature tracker: https://github.com/ros/ros_environment/issues
+    Source: git https://github.com/ros/ros_environment.git (branch: noetic)

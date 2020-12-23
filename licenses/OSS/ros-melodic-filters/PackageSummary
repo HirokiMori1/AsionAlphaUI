@@ -1,0 +1,7 @@
+This library provides a standardized interface for processing data as a sequence of filters. This package contains a base class upon which to build specific implementations as well as an interface which dynamically loads filters based on runtime parameters.
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT willowgarage DOT com>
+    Author:
+    License: BSD
+    Source: git https://github.com/ros/filters.git (branch: noetic-devel)

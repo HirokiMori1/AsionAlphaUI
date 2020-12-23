@@ -1,0 +1,8 @@
+rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
+
+    Maintainer status: maintained
+    Maintainer: Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Ze'ev Klapow
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_robot_dashboard/issues
+    Source: git https://github.com/ros-visualization/rqt_robot_dashboard.git (branch: master)

@@ -1,0 +1,7 @@
+The teleop_tools_msgs package
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>
+    Author:
+    License: BSD
+    Source: git https://github.com/ros-teleop/teleop_tools.git (branch: kinetic-devel)

@@ -1,0 +1,7 @@
+ROS console output library.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Josh Faust
+    License: BSD
+    Source: git https://github.com/ros/rosconsole.git (branch: noetic-devel)

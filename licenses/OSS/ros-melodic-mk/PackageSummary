@@ -1,0 +1,8 @@
+ROS packaging system
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>, Jacob Perron <jacob AT openrobotics DOT org>
+    Author: Eric Berger, Ken Conley, Josh Faust, Tully Foote, Brian Gerkey, Jeremy Leibs, Morgan Quigley, Dirk Thomas <dthomas AT openrobotics DOT org>, Rob Wheeler
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros/issues
+    Source: git https://github.com/ros/ros.git (branch: noetic-devel)

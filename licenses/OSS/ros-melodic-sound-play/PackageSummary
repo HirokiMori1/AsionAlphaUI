@@ -1,0 +1,8 @@
+sound_play provides a ROS node that translates commands on a ROS topic (robotsound) into sounds. The node supports built-in sounds, playing OGG/WAV files, and doing speech synthesis via festival. C++ and Python bindings allow this node to be used without understanding the details of the message format, allowing faster development and resilience to message format changes.
+
+    Maintainer status: maintained
+    Maintainer: Austin Hendrix <namniart AT gmail DOT com>, Shingo Kitagawa <shingogo.5511 AT gmail DOT com>
+    Author: Blaise Gassend
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-drivers/audio_common/issues
+    Source: git https://github.com/ros-drivers/audio_common.git (branch: master)

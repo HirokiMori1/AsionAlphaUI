@@ -1,0 +1,9 @@
+Interface for using ROS with the Gazebo simulator.
+
+    Maintainer status: developed
+    Maintainer: Jose Luis Rivero <jrivero AT osrfoundation DOT org>
+    Author: John Hsu, Nate Koenig, Dave Coleman
+    License: BSD,LGPL,Apache 2.0
+    External website: http://gazebosim.org/tutorials?cat=connect_ros
+    Bug / feature tracker: https://github.com/ros-simulation/gazebo_ros_pkgs/issues
+    Source: git https://github.com/ros-simulation/gazebo_ros_pkgs.git (branch: melodic-devel)

@@ -1,0 +1,9 @@
+ROS messages for jsk_pcl_ros and jsk_perception.
+
+    Maintainer status: maintained
+    Maintainer: Ryohei Ueda <ueda AT jsk.t.u-tokyo.ac DOT jp>
+    Author:
+    License: BSD
+    External website: https://jsk-docs.readthedocs.io/projects/jsk_recognition/en/latest/jsk_recognition_msgs
+    Bug / feature tracker: http://github.com/jsk-ros-pkg/jsk_recognition/issues
+    Source: git https://github.com/jsk-ros-pkg/jsk_recognition.git (branch: master)

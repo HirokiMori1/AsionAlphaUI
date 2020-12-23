@@ -1,0 +1,8 @@
+rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>
+    Author: Ioan Sucan <isucan AT gmail DOT com>, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/rosconsole_bridge/issues
+    Source: git https://github.com/ros/rosconsole_bridge.git (branch: kinetic-devel)

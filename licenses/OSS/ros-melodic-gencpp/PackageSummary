@@ -1,0 +1,8 @@
+C++ ROS message and service generators.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Josh Faust, Troy Straszheim, Morgen Kjaergaard
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/gencpp/issues
+    Source: git https://github.com/ros/gencpp.git (branch: kinetic-devel)

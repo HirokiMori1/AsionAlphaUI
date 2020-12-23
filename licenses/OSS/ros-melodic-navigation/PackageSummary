@@ -1,0 +1,7 @@
+A 2D navigation stack that takes in information from odometry, sensor streams, and a goal pose and outputs safe velocity commands that are sent to a mobile base.
+
+    Maintainer status: maintained
+    Maintainer: Michael Ferguson <mfergs7 AT gmail DOT com>, David V. Lu!! <davidvlu AT gmail DOT com>, Aaron Hoy <ahoy AT fetchrobotics DOT com>
+    Author: contradict@gmail.com, Eitan Marder-Eppstein
+    License: BSD,LGPL,LGPL (amcl)
+    Source: git https://github.com/ros-planning/navigation.git (branch: melodic-devel)

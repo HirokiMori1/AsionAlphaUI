@@ -1,0 +1,8 @@
+polled_camera contains a service and C++ helper classes for implementing a polled camera driver node and requesting images from it. The package is currently for internal use as the API is still under development.
+
+    Maintainer status: maintained
+    Maintainer: Jack O'Quin <jack.oquin AT gmail DOT com>, Vincent Rabaud <vincent.rabaud AT gmail DOT com>
+    Author: Patrick Mihelich
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-perception/image_common/issues
+    Source: git https://github.com/ros-perception/image_common.git (branch: noetic-devel)

@@ -1,0 +1,9 @@
+rqt_graph provides a GUI plugin for visualizing the ROS computation graph.
+Its components are made generic so that other packages where you want to achieve graph representation can depend upon this pkg (use rqt_dep to find out the pkgs that depend. rqt_dep itself depends on rqt_graph too).
+
+    Maintainer status: maintained
+    Maintainer: Michael Jeronimo <michael.jeronimo AT openrobotics DOT org>, William Woodall <william AT openrobotics DOT org>
+    Author: Dirk Thomas <dthomas AT osrfoundation DOT org>, Aaron Blasdel <ablasdel AT gmail DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_graph/issues
+    Source: git https://github.com/ros-visualization/rqt_graph.git (branch: master)

@@ -1,0 +1,8 @@
+This package provides ROS specific hooks for stage
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Brian Gerky <gerky AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-simulation/stage_ros/issues
+    Source: git https://github.com/ros-simulation/stage_ros.git (branch: lunar-devel)

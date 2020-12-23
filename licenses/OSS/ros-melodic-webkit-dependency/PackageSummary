@@ -1,0 +1,7 @@
+This encapsulates the WebKit dependency for a specific ROS distribution and its Qt version
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author:
+    License: BSD
+    Source: git https://github.com/ros-visualization/webkit_dependency.git (branch: kinetic-devel)

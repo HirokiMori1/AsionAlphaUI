@@ -1,0 +1,9 @@
+Mobile robot simulator http://rtv.github.com/Stage
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Richard Vaughan <vaughan AT sfu DOT ca>, Brian Gerkey <gerkey AT willowgarage DOT com>, Reed Hedges <hedges AT mobilerobots DOT com>, Andrew Howard <andrew.b.howard AT jpl.nasa DOT gov>, Toby Collett <tcollett AT plan9.net DOT nz>, Pooya Karimian <pooyak AT sfu DOT ca>, Jeremy Asher <jra11 AT sfu DOT ca>, Alex Couture-Beil <asc17 AT sfu DOT ca>, Geoff Biggs <git AT killbots DOT net>, Rich Mattes <jpgr87 AT github DOT com>, Abbas Sadat <abbas.sadat AT gmail DOT com>
+    License: GPL
+    External website: http://rtv.github.com/Stage
+    Bug / feature tracker: https://github.com/rtv/Stage/issues
+    Source: git https://github.com/ros-gbp/stage-release.git (branch: release/melodic/stage)

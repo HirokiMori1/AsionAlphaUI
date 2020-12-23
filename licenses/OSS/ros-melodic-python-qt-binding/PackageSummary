@@ -1,0 +1,7 @@
+This stack provides Python bindings for Qt. There are two providers: pyside and pyqt. PySide is released under the LGPL. PyQt is released under the GPL. Both the bindings and tools to build bindings are included from each available provider. For PySide, it is called "Shiboken". For PyQt, this is called "SIP". Also provided is adapter code to make the user's Python code independent of which binding provider was actually used which makes it very easy to switch between these.
+
+    Maintainer status: maintained
+    Maintainer: Claire Wang <clairewang AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Dave Hershberger, Dorian Scholz, Dirk Thomas
+    License: BSD
+    Source: git https://github.com/ros-visualization/python_qt_binding.git (branch: melodic-devel)

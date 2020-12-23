@@ -1,0 +1,9 @@
+Contains nodelets for processing depth images such as those produced by OpenNI camera. Functions include creating disparity images and point clouds, as well as registering (reprojecting) a depth image into another camera frame.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>, Autonomoustuff team <software AT autonomoustuff DOT com>
+    Author: Patrick Mihelich
+    License: BSD
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: noetic)
+
+New in ROS Fuerte depth_image_proc has found a new home in image_pipeline. In Electric it resided in openni_kinect. 

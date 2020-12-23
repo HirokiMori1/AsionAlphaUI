@@ -1,0 +1,7 @@
+geometry_msgs provides messages for common geometric primitives such as points, vectors, and poses. These primitives are designed to provide a common data type and facilitate interoperability throughout the system.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>
+    Author: Tully Foote <tfoote AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros/common_msgs.git (branch: noetic-devel)

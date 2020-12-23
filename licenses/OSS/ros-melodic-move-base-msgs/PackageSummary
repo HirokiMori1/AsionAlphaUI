@@ -1,0 +1,8 @@
+Holds the action description and relevant messages for the move_base package
+
+    Maintainer status: maintained
+    Maintainer: David V. Lu!! <davidvlu AT gmail DOT com>, Michael Ferguson <mferguson AT fetchrobotics DOT com>
+    Author: Eitan Marder-Eppstein, contradict@gmail.com
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-planning/navigation_msgs/issues
+    Source: git https://github.com/ros-planning/navigation_msgs.git (branch: jade-devel)

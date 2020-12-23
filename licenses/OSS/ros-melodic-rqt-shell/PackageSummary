@@ -1,0 +1,8 @@
+rqt_shell is a Python GUI plugin providing an interactive shell.
+
+    Maintainer status: maintained
+    Maintainer: Dorian Scholz <scholz AT sim.tu-darmstadt DOT de>, Kunal Tyagi <kunal_tyagi AT yahoo DOT com>
+    Author: Dorian Scholz
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_shell/issues
+    Source: git https://github.com/ros-visualization/rqt_shell.git (branch: master)

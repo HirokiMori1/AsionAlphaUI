@@ -1,0 +1,7 @@
+Generalized client side source for rosserial.
+
+    Maintainer status: maintained
+    Maintainer: Paul Bouchier <paul.bouchier AT gmail DOT com>, Mike Purvis <mpurvis AT clearpathrobotics DOT com>
+    Author: Michael Ferguson, Adam Stambler
+    License: BSD
+    Source: git https://github.com/ros-drivers/rosserial.git (branch: melodic-devel)

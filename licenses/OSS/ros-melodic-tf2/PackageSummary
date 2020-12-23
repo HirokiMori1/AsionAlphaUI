@@ -1,0 +1,7 @@
+tf2 is the second generation of the transform library, which lets the user keep track of multiple coordinate frames over time. tf2 maintains the relationship between coordinate frames in a tree structure buffered in time, and lets the user transform points, vectors, etc between any two coordinate frames at any desired point in time.
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author: Tully Foote, Eitan Marder-Eppstein, Wim Meeussen
+    License: BSD
+    Source: git https://github.com/ros/geometry2.git (branch: melodic-devel)

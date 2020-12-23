@@ -1,0 +1,7 @@
+The diagnostic_analysis package can convert a log of diagnostics data into a series of CSV files. Robot logs are recorded with rosbag, and can be processed offline using the scripts in this package.
+
+    Maintainer status: maintained
+    Maintainer: Guglielmo Gemignani <guglielmo.gemignani AT gmail DOT com>, Austin Hendrix <namniart AT gmail DOT com>
+    Author: Kevin Watts, Brice Rebsamen <brice.rebsamen AT gmail DOT com>, Eric Berger, Kevin Watts
+    License: BSD
+    Source: git https://github.com/ros/diagnostics.git (branch: noetic-devel)

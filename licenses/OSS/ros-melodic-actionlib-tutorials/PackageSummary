@@ -1,0 +1,8 @@
+The actionlib_tutorials package
+
+    Maintainer status: maintained
+    Maintainer: Daniel Stonier <d.stonier AT gmail DOT com>
+    Author: Melonee Wise
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/common_tutorials/issues
+    Source: git https://github.com/ros/common_tutorials.git (branch: indigo-devel)

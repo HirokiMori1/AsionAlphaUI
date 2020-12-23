@@ -1,0 +1,8 @@
+This package contains common nodelet tools such as a mux, demux and throttle.
+
+    Maintainer status: maintained
+    Maintainer: Michael Carroll <michael AT openrobotics DOT org>
+    Author: Radu Bogdan Rusu, Tully Foote
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/nodelet_core/issues
+    Source: git https://github.com/ros/nodelet_core.git (branch: noetic-devel)

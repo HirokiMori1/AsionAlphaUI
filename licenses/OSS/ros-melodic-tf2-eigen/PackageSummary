@@ -1,0 +1,7 @@
+tf2_eigen
+
+    Maintainer status: maintained
+    Maintainer: Koji Terada <terakoji AT gmail DOT com>
+    Author: Koji Terada
+    License: BSD
+    Source: git https://github.com/ros/geometry2.git (branch: melodic-devel)

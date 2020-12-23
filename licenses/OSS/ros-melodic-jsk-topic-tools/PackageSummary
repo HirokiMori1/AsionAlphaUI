@@ -1,0 +1,7 @@
+jsk_topic_tools
+
+    Maintainer status: developed
+    Maintainer: Kei Okada <k-okada AT jsk.t.u-tokyo.ac DOT jp>, Ryohei Ueda <ueda AT jsk.t.u-tokyo.ac DOT jp>
+    Author: Kei Okada <k-okada AT jsk.t.u-tokyo.ac DOT jp>, Yusuke Furuta <furuta AT jsk.t.u-tokyo.ac DOT jp>
+    License: BSD
+    Source: git https://github.com/jsk-ros-pkg/jsk_common.git (branch: master)

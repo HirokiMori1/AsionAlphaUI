@@ -1,0 +1,9 @@
+Tutorials showing how to write plugins for RViz.
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Dave Hershberger
+    License: BSD
+    Source: git https://github.com/ros-visualization/visualization_tutorials.git (branch: kinetic-devel)
+
+Please see the RViz Plugin Tutorials page for your distribution. Follow the link and replace kinetic with your preferred ROS distribution (i.e. melodic) in the URL. 

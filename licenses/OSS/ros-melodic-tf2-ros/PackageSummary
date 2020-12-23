@@ -1,0 +1,7 @@
+This package contains the ROS bindings for the tf2 library, for both Python and C++.
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author: Eitan Marder-Eppstein, Wim Meeussen
+    License: BSD
+    Source: git https://github.com/ros/geometry2.git (branch: melodic-devel)

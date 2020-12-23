@@ -1,0 +1,8 @@
+rqt_image_view provides a GUI plugin for displaying images using image_transport.
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>
+    Author: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_image_view/issues
+    Source: git https://github.com/ros-visualization/rqt_image_view.git (branch: master)

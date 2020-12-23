@@ -1,0 +1,8 @@
+rqt_gui provides the main to start an instance of the ROS integrated graphical user interface provided by qt_gui.
+
+    Maintainer status: maintained
+    Maintainer: Michael Jeronimo <michael.jeronimo AT openrobotics DOT org>
+    Author: Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt/issues
+    Source: git https://github.com/ros-visualization/rqt.git (branch: kinetic-devel)

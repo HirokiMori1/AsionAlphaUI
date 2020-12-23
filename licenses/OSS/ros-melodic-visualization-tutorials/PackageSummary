@@ -1,0 +1,7 @@
+Metapackage referencing tutorials related to rviz and visualization.
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Dave Hershberger, David Gossow, Josh Faust
+    License: BSD
+    Source: git https://github.com/ros-visualization/visualization_tutorials.git (branch: kinetic-devel)

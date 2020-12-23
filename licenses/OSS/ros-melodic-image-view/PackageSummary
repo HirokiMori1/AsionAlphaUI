@@ -1,0 +1,7 @@
+A simple viewer for ROS image topics. Includes a specialized viewer for stereo + disparity images.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>, Autonomoustuff team <software AT autonomoustuff DOT com>
+    Author: Patrick Mihelich
+    License: BSD
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: noetic)

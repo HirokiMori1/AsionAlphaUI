@@ -1,0 +1,6 @@
+rqt_rviz provides a GUI plugin embeddingRViz. Note that this rqt plugin does NOT supersede RViz but depends on it.
+
+    Maintainer status: maintained
+    Maintainer: Louise Poubel <louise AT osrfoundation DOT org>
+    Author: Dorian Scholz
+    License: BSD

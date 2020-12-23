@@ -1,0 +1,16 @@
+Metapackage of rqt plugins that are particularly used with robots during its operation.
+
+To run any rqt plugins, just type in a single command "rqt", then select any plugins you want from the GUI that launches afterwards.
+
+rqt consists of three following metapackages:
+
+    rqt - provides a container window where all rqt tools can be docked at. rqt plugin developers barely needs to pay attention.
+    rqt_common_plugins - ROS backend tools suite that can be used on/off of robot runtime.
+    rqt_robot_plugins (You're here!)
+
+    Maintainer status: maintained
+    Maintainer: Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Dirk Thomas, Aaron Blasdel, Dorian Scholz, Ze'ev Klapow, Isaac Saito
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_robot_plugins/issues
+    Source: git https://github.com/ros-visualization/rqt_robot_plugins.git (branch: master)

@@ -1,0 +1,7 @@
+this package contains a set of messages that are used by the introspection interfaces for smach.
+
+    Maintainer status: maintained
+    Maintainer: Isaac I. Y. Saito <gm130s AT gmail DOT com>
+    Author: Jonathan Bohren
+    License: BSD
+    Source: git https://github.com/ros/executive_smach.git (branch: indigo-devel)

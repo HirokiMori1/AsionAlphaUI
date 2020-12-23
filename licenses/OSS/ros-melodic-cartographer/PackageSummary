@@ -1,0 +1,8 @@
+Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
+
+    Maintainer status: developed
+    Maintainer: The Cartographer Authors <cartographer-owners AT googlegroups DOT com>
+    Author: The Cartographer Authors <google-cartographer AT googlegroups DOT com>
+    License: Apache 2.0
+    External website: https://github.com/googlecartographer/cartographer
+    Source: git https://github.com/googlecartographer/cartographer.git (branch: 1.0.0)

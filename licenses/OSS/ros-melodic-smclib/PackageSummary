@@ -1,0 +1,9 @@
+The State Machine Compiler (SMC) from http://smc.sourceforge.net/ converts a language-independent description of a state machine into the source code to support that state machine. This package contains the libraries that a compiled state machine depends on, but it does not contain the compiler itself.
+
+    Maintainer status: maintained
+    Maintainer: Michael Carroll <michael AT openrobotics DOT org>
+    Author: Various
+    License: Mozilla Public License Version 1.1
+    External website: http://smc.sourceforge.net/
+    Bug / feature tracker: https://github.com/ros/bond_core/issues
+    Source: git https://github.com/ros/bond_core.git (branch: kinetic-devel)

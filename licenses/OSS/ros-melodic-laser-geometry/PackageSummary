@@ -1,0 +1,7 @@
+This package contains a class for converting from a 2D laser scan as defined by sensor_msgs/LaserScan into a point cloud as defined by sensor_msgs/PointCloud or sensor_msgs/PointCloud2. In particular, it contains functionality to account for the skew resulting from moving robots or tilting laser scanners.
+
+    Maintainer status: maintained
+    Maintainer: Dave Hershberger <dave.hershberger AT sri DOT com>, Mabel Zhang <mabel AT openrobotics DOT org>
+    Author: Tully Foote, Radu Bogdan Rusu, William Woodall <william AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros-perception/laser_geometry.git (branch: kinetic-devel)

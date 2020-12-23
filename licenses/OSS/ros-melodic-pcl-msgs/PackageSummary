@@ -1,0 +1,6 @@
+Package containing PCL (Point Cloud Library)-related ROS messages.
+
+    Maintainer status: maintained
+    Maintainer: Paul Bovbel <paul AT bovbel DOT com>, Bill Morris <bill AT neautomation DOT com>
+    Author: Open Perception, Julius Kammerl <jkammerl AT willowgarage DOT com>, William Woodall <william AT osrfoundation DOT org>
+    License: BSD

@@ -1,0 +1,8 @@
+rqt_py_console is a Python GUI plugin providing an interactive Python console.
+
+    Maintainer status: maintained
+    Maintainer: Dorian Scholz <scholz AT sim.tu-darmstadt DOT de>
+    Author: Dorian Scholz
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_py_console/issues
+    Source: git https://github.com/ros-visualization/rqt_py_console.git (branch: master)

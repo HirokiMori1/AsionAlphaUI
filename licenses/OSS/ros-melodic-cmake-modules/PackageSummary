@@ -1,0 +1,12 @@
+A common repository for CMake Modules which are not distributed with CMake but are commonly used by ROS packages.
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>
+    Author: William Woodall <william AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/cmake_modules/issues
+    Source: git https://github.com/ros/cmake_modules.git (branch: 0.5-devel)
+
+Please refer to the external documentation:
+
+https://github.com/ros/cmake_modules/blob/0.3-devel/README.md

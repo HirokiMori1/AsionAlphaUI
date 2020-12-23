@@ -1,0 +1,8 @@
+rqt_nav_view provides a gui for viewing navigation maps and paths.
+
+    Maintainer status: maintained
+    Maintainer: Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Ze'ev Klapow
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_nav_view/issues
+    Source: git https://github.com/ros-visualization/rqt_nav_view.git (branch: master)

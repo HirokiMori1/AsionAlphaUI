@@ -1,0 +1,8 @@
+RQT plugin for monitoring ROS processes.
+
+    Maintainer status: maintained
+    Maintainer: Dan Lazewatsky <dan AT lazewatsky DOT com>
+    Author: Dan Lazewatsky <dan AT lazewatsky DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_top/issues
+    Source: git https://github.com/ros-visualization/rqt_top.git (branch: master)

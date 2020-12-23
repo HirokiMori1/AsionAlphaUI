@@ -1,0 +1,10 @@
+The control toolbox contains modules that are useful across all controllers.
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>
+    Author: Melonee Wise, Sachin Chitta, John Hsu
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-controls/control_toolbox/issues
+    Source: git https://github.com/ros-controls/control_toolbox.git (branch: melodic-devel)
+
+This package contains several C++ classes useful in writing controllers, and so the main documentation can be found on the control_toolbox doxygen page. 

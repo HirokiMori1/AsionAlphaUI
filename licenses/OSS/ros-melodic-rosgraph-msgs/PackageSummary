@@ -1,0 +1,7 @@
+Messages relating to the ROS Computation Graph. These are generally considered to be low-level messages that end users do not interact with.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>
+    Author: Ken Conley, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros/ros_comm_msgs.git (branch: kinetic-devel)

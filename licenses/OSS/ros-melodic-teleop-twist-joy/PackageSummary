@@ -1,0 +1,7 @@
+Generic joystick teleop for twist robots.
+
+    Maintainer status: maintained
+    Maintainer: Mike Purvis <mpurvis AT clearpathrobotics DOT com>
+    Author: Mike Purvis <mpurvis AT clearpathrobotics DOT com>
+    License: BSD
+    Source: git https://github.com/ros-teleop/teleop_twist_joy.git (branch: indigo-devel)

@@ -1,0 +1,8 @@
+Python ROS message and service generators.
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Ken Conley, Troy Straszheim, Morten Kjaergaard, Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/genpy/issues
+    Source: git https://github.com/ros/genpy.git (branch: kinetic-devel)

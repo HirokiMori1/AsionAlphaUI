@@ -1,0 +1,8 @@
+rqt_runtime_monitor provides a GUI plugin viewing DiagnosticsArray messages.
+
+    Maintainer status: maintained
+    Maintainer: Aaron Blasdel <ablasdel AT gmail DOT com>
+    Author: Aaron Blasdel
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_runtime_monitor/issues
+    Source: git https://github.com/ros-visualization/rqt_runtime_monitor.git (branch: master)

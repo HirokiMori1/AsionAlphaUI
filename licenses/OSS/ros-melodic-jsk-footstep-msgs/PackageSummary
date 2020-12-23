@@ -1,0 +1,7 @@
+jsk_footstep_msgs
+
+    Maintainer status: developed
+    Maintainer: Ryohei Ueda <ueda AT jsk.t.u-tokyo.ac DOT jp>
+    Author: Ryohei Ueda <ueda AT jsk.t.u-tokyo.ac DOT jp>
+    License: BSD
+    Source: git https://github.com/jsk-ros-pkg/jsk_common_msgs.git (branch: master)

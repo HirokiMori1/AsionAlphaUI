@@ -1,0 +1,7 @@
+The visulalization_marker_tutorials package
+
+    Maintainer status: maintained
+    Maintainer: William Woodall <william AT osrfoundation DOT org>
+    Author: Josh Faust
+    License: BSD
+    Source: git https://github.com/ros-visualization/visualization_tutorials.git (branch: kinetic-devel)

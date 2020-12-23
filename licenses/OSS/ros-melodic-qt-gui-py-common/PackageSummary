@@ -1,0 +1,10 @@
+qt_gui_py_common provides common functionality for GUI plugins written in Python.
+
+    Maintainer status: maintained
+    Maintainer: Scott Logan <cottsay AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Dorian Scholz
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/qt_gui_core/issues
+    Source: git https://github.com/ros-visualization/qt_gui_core.git (branch: melodic-devel)
+
+

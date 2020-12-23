@@ -1,0 +1,8 @@
+Nodelet Core Metapackage
+
+    Maintainer status: maintained
+    Maintainer: Michael Carroll <michael AT openrobotics DOT org>
+    Author: Tully Foote
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/nodelet_core/issues
+    Source: git https://github.com/ros/nodelet_core.git (branch: noetic-devel)

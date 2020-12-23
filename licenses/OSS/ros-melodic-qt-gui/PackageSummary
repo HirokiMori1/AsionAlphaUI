@@ -1,0 +1,8 @@
+qt_gui provides the infrastructure for an integrated graphical user interface based on Qt. It is extensible with Python- and C++-based plugins (implemented in separate packages) which can contribute arbitrary widgets. It requires either PyQt or PySide bindings.
+
+    Maintainer status: maintained
+    Maintainer: Scott Logan <cottsay AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/qt_gui_core/issues
+    Source: git https://github.com/ros-visualization/qt_gui_core.git (branch: melodic-devel)

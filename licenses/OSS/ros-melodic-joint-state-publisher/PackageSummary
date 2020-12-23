@@ -1,0 +1,8 @@
+This package contains a tool for setting and publishing joint state values for a given URDF.
+
+    Maintainer status: maintained
+    Maintainer: Chris Lalancette <clalancette AT osrfoundation DOT org>, Shane Loretz <sloretz AT osrfoundation DOT org>
+    Author: David V. Lu!! <davidvlu AT gmail DOT com>, Jackie Kay <jacquelinekay1 AT gmail DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/joint_state_publisher/issues
+    Source: git https://github.com/ros/joint_state_publisher.git (branch: noetic-devel)

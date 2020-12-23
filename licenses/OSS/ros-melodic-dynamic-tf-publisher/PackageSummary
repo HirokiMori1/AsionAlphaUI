@@ -1,0 +1,7 @@
+dynamically set the tf trensformation
+
+    Maintainer status: developed
+    Maintainer: Ryohei Ueda <garaemon AT gmail DOT com>
+    Author: Manabu Saito <saito AT jsk.t.u-tokyo.ac DOT jp>
+    License: BSD
+    Source: git https://github.com/jsk-ros-pkg/jsk_common.git (branch: master)

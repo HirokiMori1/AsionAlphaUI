@@ -1,0 +1,8 @@
+Base dependencies and support libraries for ROS. roslib contains many of the common data structures and tools that are shared across ROS client library implementations.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Ken Conley <kwc AT willowgarage DOT com>, Morgan Quigley <mquigley AT cs.stanford DOT edu>, Josh Faust <jfaust AT willowgarage DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros/issues
+    Source: git https://github.com/ros/ros.git (branch: kinetic-devel)

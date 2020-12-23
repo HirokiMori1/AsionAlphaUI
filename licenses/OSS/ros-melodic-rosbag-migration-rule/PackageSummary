@@ -1,0 +1,6 @@
+This empty package allows to export rosbag migration rule files without depending on rosbag.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author:
+    License: BSD

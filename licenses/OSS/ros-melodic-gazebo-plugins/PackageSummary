@@ -1,0 +1,7 @@
+Robot-independent Gazebo plugins for sensors, motors and dynamic reconfigurable components.
+
+    Maintainer status: maintained
+    Maintainer: Jose Luis Rivero <jrivero AT osrfoundation DOT org>
+    Author: John Hsu
+    License: BSD, Apache 2.0
+    External website: http://gazebosim.org/tutorials?cat=connect_ros

@@ -1,0 +1,10 @@
+image_pipeline fills the gap between getting raw images from a camera driver and higher-level vision processing.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>, Autonomoustuff team <software AT autonomoustuff DOT com>
+    Author: Patrick Mihelich, James Bowman
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-perception/image_pipeline/issues
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: noetic)
+
+    New source for Groovy and above development: git https://github.com/ros-perception/image_pipeline

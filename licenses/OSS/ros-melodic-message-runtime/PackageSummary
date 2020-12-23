@@ -1,0 +1,8 @@
+Package modeling the run-time dependencies for language bindings of messages.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author:
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/message_runtime/issues
+    Source: git https://github.com/ros/message_runtime.git (branch: kinetic-devel)

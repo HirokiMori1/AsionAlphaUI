@@ -1,0 +1,7 @@
+This package contains the python bindings PyKDL for the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project.
+
+    Maintainer status: maintained
+    Maintainer: Ruben Smits <ruben.smits AT intermodalics DOT eu>
+    Author:
+    License: LGPL
+    Source: git https://github.com/orocos/orocos_kinematics_dynamics.git (branch: master)

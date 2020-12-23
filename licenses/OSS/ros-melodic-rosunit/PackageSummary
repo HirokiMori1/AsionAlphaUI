@@ -1,0 +1,8 @@
+Unit-testing package for ROS. This is a lower-level library for rostest and handles unit tests, whereas rostest handles integration tests.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Ken Conley
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros/issues
+    Source: git https://github.com/ros/ros.git (branch: kinetic-devel)

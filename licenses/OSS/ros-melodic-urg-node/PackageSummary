@@ -1,0 +1,8 @@
+urg_node
+
+    Maintainer status: maintained
+    Maintainer: Tony Baltovski <tony.baltovski AT gmail DOT com>
+    Author: Chad Rockey <chadrockey AT gmail DOT com>, Mike O'Driscoll <modriscoll AT clearpath DOT ai>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-drivers/urg_node/issues
+    Source: git https://github.com/ros-drivers/urg_node.git (branch: kinetic-devel)

@@ -1,0 +1,7 @@
+oslang is a common package that all ROS client libraries depend on. This is mainly used to find client libraries (via 'rospack depends-on1 roslang').
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Brian Gerkey <gerkey AT willowgarage DOT com>
+    License: BSD
+    Source: git https://github.com/ros/ros.git (branch: kinetic-devel)

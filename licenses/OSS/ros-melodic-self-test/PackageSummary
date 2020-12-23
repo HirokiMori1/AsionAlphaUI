@@ -1,0 +1,7 @@
+self_test
+
+    Maintainer status: maintained
+    Maintainer: Guglielmo Gemignani <guglielmo.gemignani AT gmail DOT com>, Austin Hendrix <namniart AT gmail DOT com>
+    Author: Kevin Watts, Brice Rebsamen <brice.rebsamen AT gmail DOT com>, Jeremy Leibs and Blaise Gassend
+    License: BSD
+    Source: git https://github.com/ros/diagnostics.git (branch: indigo-devel)

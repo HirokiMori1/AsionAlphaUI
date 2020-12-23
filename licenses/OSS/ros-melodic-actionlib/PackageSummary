@@ -1,0 +1,8 @@
+The actionlib stack provides a standardized interface for interfacing with preemptable tasks. Examples of this include moving the base to a target location, performing a laser scan and returning the resulting point cloud, detecting the handle of a door, etc.
+
+    Maintainer status: maintained
+    Maintainer: Michael Carroll <michael AT openrobotics DOT org>, Jacob Perron <jacob AT openrobotics DOT org>
+    Author: Eitan Marder-Eppstein, Vijay Pradeep, Mikael Arguedas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/actionlib/issues
+    Source: git https://github.com/ros/actionlib.git (branch: noetic-devel)

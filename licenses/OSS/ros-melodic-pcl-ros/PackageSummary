@@ -1,0 +1,8 @@
+PCL (Point Cloud Library) ROS interface stack. PCL-ROS is the preferred bridge for 3D applications involving n-D Point Clouds and 3D geometry processing in ROS.
+
+    Maintainer status: maintained
+    Maintainer: Paul Bovbel <paul AT bovbel DOT com>, Kentaro Wada <www.kentaro.wada AT gmail DOT com>, Steve Macenski <stevenmacenski AT gmail DOT com>
+    Author: Open Perception, Julius Kammerl <julius AT kammerl DOT de>, William Woodall <william AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-perception/perception_pcl/issues
+    Source: git https://github.com/ros-perception/perception_pcl.git (branch: melodic-devel)

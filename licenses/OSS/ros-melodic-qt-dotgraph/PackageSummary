@@ -1,0 +1,8 @@
+qt_dotgraph provides helpers to work with dot graphs.
+
+    Maintainer status: maintained
+    Maintainer: Scott Logan <cottsay AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Thibault Kruse, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/qt_gui_core/issues
+    Source: git https://github.com/ros-visualization/qt_gui_core.git (branch: melodic-devel)

@@ -1,0 +1,9 @@
+position_controllers
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>, Mathias Lüdtke <mathias.luedtke AT ipa.fraunhofer DOT de>, Enrique Fernandez <enrique.fernandez.perdomo AT gmail DOT com>
+    Author: Vijay Pradeep
+    License: BSD
+    External website: https://github.com/ros-controls/ros_controllers/wiki
+    Bug / feature tracker: https://github.com/ros-controls/ros_controllers/issues
+    Source: git https://github.com/ros-controls/ros_controllers.git (branch: melodic-devel)

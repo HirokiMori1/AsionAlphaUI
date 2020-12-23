@@ -1,0 +1,7 @@
+This encapsulates the Qwt dependency for a specific ROS distribution and its Qt version
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>
+    Author: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Source: git https://github.com/ros-visualization/qwt_dependency.git (branch: kinetic-devel)

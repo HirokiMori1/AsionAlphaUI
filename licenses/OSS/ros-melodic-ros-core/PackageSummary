@@ -1,0 +1,8 @@
+A metapackage to aggregate the packages required to use publish / subscribe, services, launch files, and other core ROS concepts.
+
+    Maintainer status: maintained
+    Maintainer: Mikael Arguedas <mikael AT osrfoundation DOT org>
+    Author: Dirk Thomas
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/metapackages/issues
+    Source: git https://github.com/ros/metapackages.git (branch: melodic-devel)

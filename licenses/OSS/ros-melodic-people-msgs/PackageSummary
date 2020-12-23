@@ -1,0 +1,7 @@
+Messages used by nodes in the people stack.
+
+    Maintainer status: maintained
+    Maintainer: Dan Lazewatsky <dan AT lazewatsky DOT com>
+    Author: Caroline Pantofaru
+    License: BSD
+    Source: git https://github.com/wg-perception/people.git (branch: melodic)

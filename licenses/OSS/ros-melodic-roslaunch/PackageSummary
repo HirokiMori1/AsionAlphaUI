@@ -1,0 +1,8 @@
+roslaunch is a tool for easily launching multiple ROS nodes locally and remotely via SSH, as well as setting parameters on the Parameter Server. It includes options to automatically respawn processes that have already died. roslaunch takes in one or more XML configuration files (with the .launch extension) that specify the parameters to set and nodes to launch, as well as the machines that they should be run on.
+
+    Maintainer status: maintained
+    Maintainer: Jacob Perron <jacob AT openrobotics DOT org>, Michael Carroll <michael AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Ken Conley, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros_comm/issues
+    Source: git https://github.com/ros/ros_comm.git (branch: melodic-devel)

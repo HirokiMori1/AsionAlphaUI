@@ -1,0 +1,10 @@
+rosparam contains the rosparam command-line tool for getting and setting ROS Parameters on the Parameter Server using YAML-encoded files. It also contains an experimental library for using YAML with the Parameter Server. This library is intended for internal use only. rosparam can be invoked within a roslaunch file.
+
+    Maintainer status: maintained
+    Maintainer: Jacob Perron <jacob AT openrobotics DOT org>, Michael Carroll <michael AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Ken Conley, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros_comm/issues
+    Source: git https://github.com/ros/ros_comm.git (branch: melodic-devel)
+
+

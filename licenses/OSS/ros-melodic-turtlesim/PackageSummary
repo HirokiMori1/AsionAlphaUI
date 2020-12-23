@@ -1,0 +1,8 @@
+turtlesim is a tool made for teaching ROS and ROS packages.
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>, Shane Loretz <sloretz AT openrobotics DOT org>
+    Author: Josh Faust, Dirk Thomas <dthomas AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/ros_tutorials/issues
+    Source: git https://github.com/ros/ros_tutorials.git (branch: melodic-devel)

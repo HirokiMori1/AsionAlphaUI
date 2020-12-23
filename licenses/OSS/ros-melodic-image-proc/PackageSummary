@@ -1,0 +1,7 @@
+Single image rectification and color processing.
+
+    Maintainer status: maintained
+    Maintainer: Vincent Rabaud <vincent.rabaud AT gmail DOT com>, Autonomoustuff team <software AT autonomoustuff DOT com>
+    Author: Patrick Mihelich, Kurt Konolige, Jeremy Leibs
+    License: BSD
+    Source: git https://github.com/ros-perception/image_pipeline.git (branch: noetic)

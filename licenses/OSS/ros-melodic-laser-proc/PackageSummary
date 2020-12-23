@@ -1,0 +1,8 @@
+laser_proc
+
+    Maintainer status: maintained
+    Maintainer: Chad Rockey <chadrockey AT willowgarage DOT com>
+    Author: Chad Rockey <chadrockey AT willowgarage DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-perception/laser_proc/issues
+    Source: git https://github.com/ros-perception/laser_proc.git (branch: melodic-devel)

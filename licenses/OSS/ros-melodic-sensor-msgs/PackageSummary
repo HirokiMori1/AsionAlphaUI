@@ -1,0 +1,7 @@
+This package defines messages for commonly used sensors, including cameras and scanning laser rangefinders.
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author:
+    License: BSD
+    Source: git https://github.com/ros/common_msgs.git (branch: jade-devel)

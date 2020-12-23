@@ -1,0 +1,8 @@
+Xacro (XML Macros) Xacro is an XML macro language. With xacro, you can construct shorter and more readable XML files by using macros that expand to larger XML expressions.
+
+    Maintainer status: maintained
+    Maintainer: Robert Haschke <rhaschke AT techfak.uni-bielefeld DOT de>, Morgan Quigley <morgan AT osrfoundation DOT org>
+    Author: Stuart Glaser, William Woodall, Robert Haschke
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/xacro/issues
+    Source: git https://github.com/ros/xacro.git (branch: melodic-devel)

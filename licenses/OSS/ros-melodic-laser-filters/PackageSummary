@@ -1,0 +1,7 @@
+Assorted filters designed to operate on 2D planar laser scanners, which use the sensor_msgs/LaserScan type.
+
+    Maintainer status: maintained
+    Maintainer: Jon Binney <jon.binney AT gmail DOT com>
+    Author: Tully Foote
+    License: BSD
+    Source: git https://github.com/ros-perception/laser_filters.git (branch: kinetic-devel)

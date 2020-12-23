@@ -1,0 +1,8 @@
+The Kinematics and Dynamics Library (KDL) defines a tree structure to represent the kinematic and dynamic parameters of a robot mechanism. kdl_parser provides tools to construct a KDL tree from an XML robot representation in URDF.
+
+    Maintainer status: maintained
+    Maintainer: Chris Lalancette <clalancette AT osrfoundation DOT org>, Shane Loretz <sloretz AT osrfoundation DOT org>
+    Author: Wim Meeussen <wim AT willowgarage DOT com>, Ioan Sucan <isucan AT gmail DOT com>, Jackie Kay <jacquelinekay1 AT gmail DOT com>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/kdl_parser/issues
+    Source: git https://github.com/ros/kdl_parser.git (branch: noetic-devel)

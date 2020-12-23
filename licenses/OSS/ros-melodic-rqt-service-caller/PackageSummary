@@ -1,0 +1,8 @@
+rqt_service_caller provides a GUI plugin for calling arbitrary services.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>, Dorian Scholz <scholz AT sim.tu-darmstadt DOT de>
+    Author: Dorian Scholz
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_service_caller/issues
+    Source: git https://github.com/ros-visualization/rqt_service_caller.git (branch: master)

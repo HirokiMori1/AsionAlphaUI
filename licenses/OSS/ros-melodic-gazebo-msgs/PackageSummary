@@ -1,0 +1,7 @@
+Message and service data structures for interacting with Gazebo from ROS.
+
+    Maintainer status: maintained
+    Maintainer: Jose Luis Rivero <jrivero AT osrfoundation DOT org>
+    Author: John Hsu
+    License: BSD
+    External website: http://gazebosim.org/tutorials?cat=connect_ros

@@ -1,0 +1,7 @@
+Time and Duration implementations for C++ libraries, including roscpp.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Josh Faust
+    License: BSD
+    Source: git https://github.com/ros/roscpp_core.git (branch: kinetic-devel)

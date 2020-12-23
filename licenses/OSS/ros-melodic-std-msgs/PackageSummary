@@ -1,0 +1,8 @@
+Standard ROS Messages including common message types representing primitive data types and other basic message constructs, such as multiarrays. For common, generic robot-specific message types, please see common_msgs.
+
+    Maintainer status: maintained
+    Maintainer: Michel Hidalgo <michel AT ekumenlabs DOT com>
+    Author: Morgan Quigley <mquigley AT cs.stanford DOT edu>, Ken Conley <kwc AT willowgarage DOT com>, Jeremy Leibs <leibs AT willowgarage DOT com>, Tully Foote <tfoote AT osrfoundation DOT org>
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/std_msgs/issues
+    Source: git https://github.com/ros/std_msgs.git (branch: kinetic-devel)

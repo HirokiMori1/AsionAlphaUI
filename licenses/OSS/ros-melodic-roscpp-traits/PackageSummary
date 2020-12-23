@@ -1,0 +1,7 @@
+roscpp_traits contains the message traits code as described in MessagesTraits. This package is a component of roscpp.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author: Josh Faust
+    License: BSD
+    Source: git https://github.com/ros/roscpp_core.git (branch: noetic-devel)

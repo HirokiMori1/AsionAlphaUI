@@ -1,0 +1,7 @@
+Conversion functions between KDL and geometry_msgs types.
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author: Adam Leeper
+    License: BSD
+    Source: git https://github.com/ros/geometry.git (branch: noetic-devel)

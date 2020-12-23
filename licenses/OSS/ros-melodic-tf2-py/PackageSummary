@@ -1,0 +1,7 @@
+The tf2_py package
+
+    Maintainer status: maintained
+    Maintainer: Tully Foote <tfoote AT osrfoundation DOT org>
+    Author:
+    License: BSD
+    Source: git https://github.com/ros/geometry2.git (branch: melodic-devel)

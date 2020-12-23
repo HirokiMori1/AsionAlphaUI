@@ -1,0 +1,8 @@
+rqt_bag provides a GUI plugin for displaying and replaying ROS bag files.
+
+    Maintainer status: maintained
+    Maintainer: Mabel Zhang <mabel AT openrobotics DOT org>, Michael Jeronimo <michael.jeronimo AT openrobotics DOT org>
+    Author: Dirk Thomas <dthomas AT osrfoundation DOT org>, Aaron Blasdel <ablasdel AT gmail DOT com>, Austin Hendrix <namniart AT gmail DOT com>, Tim Field
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-visualization/rqt_bag/issues
+    Source: git https://github.com/ros-visualization/rqt_bag.git (branch: master)

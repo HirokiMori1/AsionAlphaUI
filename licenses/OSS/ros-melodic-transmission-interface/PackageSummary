@@ -1,0 +1,9 @@
+Transmission Interface.
+
+    Maintainer status: maintained
+    Maintainer: Bence Magyar <bence.magyar.robotics AT gmail DOT com>, Enrique Fernandez <enrique.fernandez.perdomo AT gmail DOT com>, Mathias Lüdtke <mathias.luedtke AT ipa.fraunhofer DOT de>
+    Author: Adolfo Rodriguez Tsouroukdissian
+    License: BSD
+    External website: https://github.com/ros-controls/ros_control/wiki
+    Bug / feature tracker: https://github.com/ros-controls/ros_control/issues
+    Source: git https://github.com/ros-controls/ros_control.git (branch: melodic-devel)

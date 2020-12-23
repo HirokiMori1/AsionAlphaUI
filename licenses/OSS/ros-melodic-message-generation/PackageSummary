@@ -1,0 +1,8 @@
+Package modeling the build-time dependencies for generating language bindings of messages.
+
+    Maintainer status: maintained
+    Maintainer: Dirk Thomas <dthomas AT osrfoundation DOT org>
+    Author:
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/message_generation/issues
+    Source: git https://github.com/ros/message_generation.git (branch: kinetic-devel)

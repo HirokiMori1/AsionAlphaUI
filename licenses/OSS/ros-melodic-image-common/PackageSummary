@@ -1,0 +1,8 @@
+Common code for working with images in ROS.
+
+    Maintainer status: maintained
+    Maintainer: Jack O'Quin <jack.oquin AT gmail DOT com>, Vincent Rabaud <vincent.rabaud AT gmail DOT com>
+    Author: Patrick Mihelich, James Bowman
+    License: BSD
+    Bug / feature tracker: https://github.com/ros-perception/image_common/issues
+    Source: git https://github.com/ros-perception/image_common.git (branch: noetic-devel)

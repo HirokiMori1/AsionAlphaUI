@@ -1,0 +1,7 @@
+jsk_gui_msgs
+
+    Maintainer status: developed
+    Maintainer: KazutoMurase <murase AT jsk.imi.i.u-tokyo.ac DOT jp>
+    Author: chen
+    License: Apache 2.0
+    Source: git https://github.com/jsk-ros-pkg/jsk_common_msgs.git (branch: master)

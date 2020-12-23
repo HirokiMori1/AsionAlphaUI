@@ -1,0 +1,7 @@
+A set of plugins for publishing and subscribing to sensor_msgs/Image topics in representations other than raw pixel data. For example, for viewing a stream of images off-robot, a video codec will give much lower bandwidth and latency. For low frame rate tranport of high-definition images, you might prefer sending them as JPEG or PNG-compressed form.
+
+    Maintainer status: unmaintained
+    Maintainer: David Gossow <dgossow AT willowgarage DOT com>
+    Author: Patrick Mihelich, Julius Kammerl
+    License: BSD
+    Source: git https://github.com/ros-perception/image_transport_plugins.git (branch: noetic-devel)

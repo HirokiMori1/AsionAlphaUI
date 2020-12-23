@@ -1,0 +1,9 @@
+The jsk_rviz_plugins package
+
+    Maintainer status: developed
+    Maintainer: Kei Okada <k-okada AT jsk.t.u-tokyo.ac DOT jp>
+    Author: Kei Okada <k-okada AT jsk.t.u-tokyo.ac DOT jp>, Yohei Kakiuchi <youhei AT jsk.t.u-tokyo.ac DOT jp>, Shohei Fujii <s-fujii AT jsk.t.u-tokyo.ac DOT jp>, Ryohei Ueda <ueda AT jsk.t.u-tokyo.ac DOT jp>
+    License: BSD
+    External website: http://jsk-docs.readthedocs.io/en/latest/jsk_visualization/doc/jsk_rviz_plugins
+    Bug / feature tracker: http://github.com/jsk-ros-pkg/jsk_visualization/issues
+    Source: git https://github.com/jsk-ros-pkg/jsk_visualization.git (branch: master)

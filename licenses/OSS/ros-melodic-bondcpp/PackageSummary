@@ -1,0 +1,8 @@
+C++ implementation of bond, a mechanism for checking when another process has terminated.
+
+    Maintainer status: maintained
+    Maintainer: Michael Carroll <michael AT openrobotics DOT org>
+    Author: Stuart Glaser
+    License: BSD
+    Bug / feature tracker: https://github.com/ros/bond_core/issues
+    Source: git https://github.com/ros/bond_core.git (branch: kinetic-devel)

@@ -1,0 +1,11 @@
+Provides ROS plugins that offer message and service publishers for interfacing with Gazebo through ROS. Formally simulator_gazebo/gazebo
+
+    Maintainer status: developed
+    Maintainer: Jose Luis Rivero <jrivero AT osrfoundation DOT org>
+    Author: John Hsu, Nate Koenig, Dave Coleman
+    License: Apache 2.0
+    External website: http://gazebosim.org/tutorials?cat=connect_ros
+    Bug / feature tracker: https://github.com/ros-simulation/gazebo_ros_pkgs/issues
+    Source: git https://github.com/ros-simulation/gazebo_ros_pkgs.git (branch: melodic-devel)
+
+New in Hydro: This package replaces gazebo in ROS Hydro 

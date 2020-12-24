@@ -9,4 +9,6 @@
 5. compile
 6. $ ./build-AsionAlphaUI-unknown-Debug/AsionAlphaUI
 
-ToDo: We must make shellscript to setup ros environment variables just like wcfk_ui.sh!!
+## 自動起動設定
+アクティビティ -> 自動起動するアプリケーションの設定
+-> 追加 -> AsionAlphaUI.sh

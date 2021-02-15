@@ -223,15 +223,13 @@ void MainWindow::on_navigationButton_clicked()
         ui->scrollArea->setEnabled(false);
 
         // ラベルから地図番号を取得
-        QRegExp r("(\\d+)$");
-        r.indexIn(ui->selectedMapName->text());
-        QString mapNum = r.cap(0);
+        QString mapNum = ui->selectedMapName->text();
 
         // navigation.sh実行
         QString sh = QString::asprintf("%s%s %s",
                                        SH_FILEPATH,
                                        SH_NAVIGATION,
-                                       mapNum.toLocal8Bit().constData());
+                                       mapNum.toUtf8().data());
         qDebug() << "[MainWindow::on_navigationButton_clicked]" << sh;
 
         runShellscript(sh);
@@ -271,15 +269,13 @@ void MainWindow::on_startButton_clicked()
         ui->scrollArea->setEnabled(false);
 
         // ラベルから地図番号を取得
-        QRegExp r("(\\d+)$");
-        r.indexIn(ui->selectedMapName->text());
-        QString mapNum = r.cap(0);
+        QString mapNum = ui->selectedMapName->text();
 
         // start.sh実行
         QString startPath = QString::asprintf("%s%s %s",
                                                 SH_FILEPATH,
                                                 SH_START,
-                                                mapNum.toLocal8Bit().constData());
+                                                mapNum.toUtf8().data());
         qDebug() << "[MainWindow::on_startButton_clicked]" << startPath;
         runShellscript(startPath);
     }
